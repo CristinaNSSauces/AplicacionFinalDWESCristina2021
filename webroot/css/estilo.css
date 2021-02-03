@@ -653,7 +653,6 @@ footer table tr .derechos {
   width: 70px;
   font-size: 15px;
 }
-
 .mainConsultarEditarDepartamento #consultarEditarDepartamento {
   width: 100%;
   height: 100%;
@@ -1226,11 +1225,12 @@ footer table tr .derechos {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: auto;
 }
 
 .mainRest form{
   max-height: 250px;
-  overflow: auto;
+  /*overflow: auto;*/
 }
 
 .tecnologias {

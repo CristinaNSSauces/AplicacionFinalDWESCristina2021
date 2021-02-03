@@ -34,6 +34,9 @@
                 <br><br>
                 <input class="enviar" type="submit" value="Registrarse" name="Registrarse">
             </div>
+            <?php 
+                // phpinfo();
+            ?>
         </form>
     </div>
 </main>

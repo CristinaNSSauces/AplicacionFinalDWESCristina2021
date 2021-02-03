@@ -1,16 +1,16 @@
 <?php
 
 /**
- * REST
+ * RESTAjeno
  *
- * Clase que se va a utilizar para crear usar diferentes api rest
+ * Clase que se va a utilizar para usar diferentes api rest
  * 
  * @author Cristina Nuñez
  * @since 1.0
  * @copyright 28-01-2021
  * @version 1.0
  */
-class REST{    
+class RESTAjeno{    
     /**
      * obtenerCentrosDeDia
      * 
@@ -64,13 +64,58 @@ class REST{
                 throw new Exception("Error en la conexión con el servidor, vuelva a intentarlo mas tarde"); // lanzamos una excepcion
             }
             
-            return json_decode($resultado, true); // devolvemos un array con los datos correspondientes      
+            return json_decode($resultado, true); // devolvemos un array con los datos correspondientes
             
         }catch(Exception $excepcion){
             $aRespuesta [0] = $excepcion -> getMessage(); //Asignamos a un array el mensaje de error de la excepcion
             return $aRespuesta; // devolvemos el array con el mensaje de error
         }
         
+    }
+        
+    /**
+     * obtenerVolumenDeNegocio
+     * 
+     * Metodo que nos permite obtener el volumen de negocio de un departamento almacenado en la base de datos de Javier
+     * pasando como parametro el codigo del departamento del cual deseamos obtener la informacion
+     *
+     * @param  string $codDepartamento codigo de departamento
+     * @return string[] array con los datos obtenidos en la conexion con el servidor
+     */
+    public static function obtenerVolumenDeNegocio($codDepartamento){ // TODO Cambiar en paso a explotacion
+        $resultado = file_get_contents('http://daw217.sauces.local/AplicacionFinalDWESJavier2021/api/consultarVolumenDeNegocio.php?codDepartamento='.$codDepartamento); // obtenemos el resultado del servidor del api rest
+
+        return json_decode($resultado, true);// devolvemos un array con los datos correspondientes
+    }
+    
+    /**
+     * obtenerVolumenDeNegocioPOST
+     * 
+     * Metodo que nos permite obtener los datos de un departamento almacenado en la base de datos 
+     * pasando como parametro el codigo del departamento y una clave mediante el metodo POST 
+     *
+     * @param  string $codDepartamento codigo de departamento
+     * @param  string $key clave para acceder al servicio REST
+     * @return string[] array con los datos obtenidos en la conexion con el servidor
+     */
+    public static function obtenerDatosDepartamentoPOST($codDepartamento, $key){ // TODO Cambiar en paso a explotacion
+
+        $aParametros = ['codDepartamento' => $codDepartamento,
+                        'key' => hash('sha256', $key)]; // array con los parametros introducidos por el usuario
+
+        $conexionCurl = curl_init('http://192.168.1.215/AplicacionFinalDWESCristina2021/api/servicioDepartamento.php'); // iniciamos sesion
+
+        curl_setopt($conexionCurl, CURLOPT_POSTFIELDS, $aParametros); // preparamos los parametros por metodo post
+        
+        curl_setopt($conexionCurl, CURLOPT_RETURNTRANSFER, true); // obtenemos el resultado como string
+
+        $respuesta = curl_exec($conexionCurl); // establecemos la conexion y pasamos los parametros
+
+        curl_close($conexionCurl);
+
+        $resultado = json_decode($respuesta, true);
+
+        return $resultado;
     }
 }
 ?>

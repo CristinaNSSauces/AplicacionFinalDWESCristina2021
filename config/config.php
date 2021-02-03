@@ -4,7 +4,9 @@ require_once "core/libreriaValidacion.php";
 require_once "model/Usuario.php";
 require_once "model/UsuarioDB.php";
 require_once "model/UsuarioPDO.php";
-require_once "model/REST.php";
+require_once "model/Departamento.php";
+require_once "model/DepartamentoPDO.php";
+require_once "model/RESTAjeno.php";
 require_once "model/DBPDO.php";
 
 $controladores = [
@@ -15,7 +17,8 @@ $controladores = [
     "rest" => "controller/cREST.php",
     "miCuenta" => "controller/cMiCuenta.php",
     "borrarCuenta" => "controller/cBorrarCuenta.php",
-    "cambiarPassword" => "controller/cCambiarPassword.php"
+    "cambiarPassword" => "controller/cCambiarPassword.php",
+    "mtoDepartamentos" => "controller/cMtoDepartamentos.php"
 ];
 
 $vistas = [
@@ -27,6 +30,7 @@ $vistas = [
     "rest" => "view/vREST.php",
     "miCuenta" => "view/vMiCuenta.php",
     "borrarCuenta" => "view/vBorrarCuenta.php",
-    "cambiarPassword" => "view/vCambiarPassword.php"
+    "cambiarPassword" => "view/vCambiarPassword.php",
+    "mtoDepartamentos" => "view/vMtoDepartamentos.php"
 ];
 ?>

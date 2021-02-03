@@ -36,7 +36,6 @@
             </div>
             <br>
             <input class="boton" type="submit" value="enviar" name="enviar">
-            <input class="boton" type="submit" value="volver" name="volver">
         </form>
         <br><br>
         <form class="forNavInicio" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
@@ -58,6 +57,52 @@
                 }
                 ?>
             <input class="boton" type="submit" value="Obtener Festivos" name="obtenerDatos">
+        </form>
+        <br><br>
+        <form class="forNavInicio" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+            <h3>Obtener volumen de negocio de un departamento GET (Javier)</h3>
+            <br>
+            <label for="nombre">Codigo de departamento: </label>
+            <input type="text" id="codDepartamento" name="codDepartamento" value="<?php echo isset($_REQUEST['codDepartamento']) ? $_REQUEST['codDepartamento'] : null ?>">
+            <br>
+                <?php
+                    if(isset($aObtenerVolumenNegocio)){
+                        if(count($aObtenerVolumenNegocio)>1){
+                            echo "<h4>Volumen de negocio:".$aObtenerVolumenNegocio['VolumenDeNegocio']."</h4>";
+                        }else{
+                            echo "<h4>".$aObtenerVolumenNegocio['MensajeDeError']."</h4>";
+                        }
+                    }
+                ?>
+            <br>
+            <input class="boton" type="submit" value="enviar" name="obtenerVolumenNegocio">
+        </form>
+        <br><br>
+        <form class="forNavInicio" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+            <h3>Obtener datos de un departamento POST (Api REST Propio)</h3>
+            <br>
+            <label for="codDepartamentoPost">Codigo de departamento: </label>
+            <input type="text" id="codDepartamentoPost" name="codDepartamentoPost" value="<?php echo isset($_REQUEST['codDepartamentoPost']) ? $_REQUEST['codDepartamentoPost'] : null ?>">
+            <br>
+            <label for="key">Key: </label>
+            <input type="password" id="key" name="key">
+            <br>
+                <?php
+                    if(isset($aObtenerDatosDepartamento)){
+                        if($aObtenerDatosDepartamento['resultado']!=null){
+                            echo "<h4>Codigo de departamento: ".$aObtenerDatosDepartamento['resultado']['codDepartamento']."</h4>";
+                            echo "<h4>Volumen de negocio: ".$aObtenerDatosDepartamento['resultado']['descDepartamento']."</h4>";
+                            echo "<h4>Volumen de negocio: ".$aObtenerDatosDepartamento['resultado']['volumenDeNegocio']."</h4>";
+                        }else{
+                            echo "<h4>".$aObtenerDatosDepartamento['error']."</h4>";
+                        }
+                    }
+                ?>
+            <br>
+            <input class="boton" type="submit" value="enviar" name="obtenerDatosPost">
+        </form>
+        <br>
+        <form class="forNavInicio" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
             <input class="boton" type="submit" value="volver" name="volver">
         </form>
     </div>
