@@ -11,6 +11,7 @@ require_once "model/DBPDO.php";
 
 $controladores = [
     "wip" => "controller/cWIP.php",
+    "principal" => "controller/cPrincipal.php",
     "login" => "controller/cLogin.php",
     "inicio" => "controller/cInicio.php",
     "registro" => "controller/cRegistro.php",
@@ -24,6 +25,7 @@ $controladores = [
 $vistas = [
     "wip" => "view/vWIP.php",
     "layout" => "view/layout.php",
+    "principal" => "view/vPrincipal.php",
     "login" => "view/vLogin.php",
     "inicio" => "view/vInicio.php",
     "registro" => "view/vRegistro.php",

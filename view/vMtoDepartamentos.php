@@ -27,7 +27,7 @@
     <?php 
         if(count($aDepartamentos)>0){
     ?>
-        <form id="formularioCampos" action="" method="post">
+        <form id="formularioCampos" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
             <table>
                 <thead>
                     <tr>
@@ -61,7 +61,7 @@
                 </tbody>
             </table>
         </form>
-        <form id="formularioPaginacion" action="" method="post">
+        <form id="formularioPaginacion" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
             <table>
                 <tr>
                     <td><button type="submit"><img src="webroot/media/images/pagInicial.png" alt="editar departamento" width="30px"></button></td>

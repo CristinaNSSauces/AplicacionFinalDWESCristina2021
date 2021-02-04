@@ -5,6 +5,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>AplicaionFinal</title>
             <link rel="stylesheet" href="webroot/css/estilo.css">
+            <script src="webroot/js/script.js"></script>
         </head>
         <body>
 
@@ -15,7 +16,7 @@
             <table>
                 <tr>
                     <td><button type="submit" name="Tecnologias" class="tecnologias">Ver tecnologías y herramientas utilizadas</button></td>
-                    <td><a href="#">Ver RSS O Atom</a></td>
+                    <td><a href="webroot/rss/rss.xml" target="_blank">Ver RSS O Atom</a></td>
                     <td><a href="https://github.com/CristinaNSSauces" target="_blank">Ir a la web del repositorio</a></td>
                 </tr>
                 <tr>

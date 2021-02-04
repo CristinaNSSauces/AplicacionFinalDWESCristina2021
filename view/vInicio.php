@@ -3,7 +3,7 @@
         <li id="logo">CNS</li>
         <li>Inicio</li>
     </ul>
-    <form class="forNavInicio" action="" method="post">
+    <form class="forNavInicio" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
         <button class="botonNav" name="rest">Rest</button>
         <button class="botonNav" name="mtoDepartamentos">Mto Departamentos</button>
         <button class="botonNav" name="editarPerfil">Editar Perfil</button>

@@ -4,7 +4,7 @@
 ***Descripción: Aplicación final DWES 2021***
 
 #### *Fecha Inicio: 20/01/2021*
-#### *Última Actualización: 28/01/2021*
+#### *Última Actualización: 04/02/2021*
 
 ***Autor: Cristina Núñez Sebastián***
 
@@ -15,11 +15,13 @@
 - Cambiar Password
 - Eliminar Cuenta
 - Uso de Api Rest
+- Creacion Api REST (GET & POST with key)
 - Cerrar sesión
 
 **Front End**
-- HTML
-- CSS
+- HTML5
+- CSS3
+- JavaScript
 
 **Back End**
 - PHP 7.4

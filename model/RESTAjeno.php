@@ -83,7 +83,7 @@ class RESTAjeno{
      * @return string[] array con los datos obtenidos en la conexion con el servidor
      */
     public static function obtenerVolumenDeNegocio($codDepartamento){ // TODO Cambiar en paso a explotacion
-        $resultado = file_get_contents('http://daw217.sauces.local/AplicacionFinalDWESJavier2021/api/consultarVolumenDeNegocio.php?codDepartamento='.$codDepartamento); // obtenemos el resultado del servidor del api rest
+        $resultado = file_get_contents('http://daw217.ieslossauces.es/AplicacionFinalDWESJavier2021/api/consultarDatosDepartamento.php?codDepartamento='.$codDepartamento); // obtenemos el resultado del servidor del api rest
 
         return json_decode($resultado, true);// devolvemos un array con los datos correspondientes
     }
@@ -103,7 +103,7 @@ class RESTAjeno{
         $aParametros = ['codDepartamento' => $codDepartamento,
                         'key' => hash('sha256', $key)]; // array con los parametros introducidos por el usuario
 
-        $conexionCurl = curl_init('http://192.168.1.215/AplicacionFinalDWESCristina2021/api/servicioDepartamento.php'); // iniciamos sesion
+        $conexionCurl = curl_init('http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/api/servicioDepartamento.php'); // iniciamos sesion
 
         curl_setopt($conexionCurl, CURLOPT_POSTFIELDS, $aParametros); // preparamos los parametros por metodo post
         

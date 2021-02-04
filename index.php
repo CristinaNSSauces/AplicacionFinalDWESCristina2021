@@ -11,7 +11,7 @@ if(isset($_SESSION['usuarioDAW215AplicacionFinal'])){ // Si el usuario ha inicia
 } else if (isset($_SESSION['paginaEnCursoSinRegistro'])){ // Si el usuario no ha iniciado sesion y a solicitado una pagina en curso sin registro
     require_once $_SESSION['paginaEnCursoSinRegistro']; // Incluimos el controlador de la pagina en curso sin registro
 }else{ // Si el usuario no se ha identificado y no ha solicitado ninguna pagina en curso sin registro por defecto cargaremos el login
-    require_once $controladores['login']; // Incluimos el controlador del login
+    require_once $controladores['principal']; // Incluimos el controlador del login
 }
 
 ?>

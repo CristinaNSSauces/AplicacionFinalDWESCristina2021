@@ -2,7 +2,7 @@
 require_once '../model/RESTPropio.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET'){ // comprobamos que el usuario esta realizando una peticion GET
-    if (isset($_GET['codDepartamento'])){ // si ha introducido el parametro
+    if (isset($_GET['codDepartamento']) && ctype_upper($_GET['codDepartamento'])){ // si ha introducido el parametro
         $aDatosObtenidos = RESTPropio::obtenerDatos($_GET['codDepartamento']); // obtenemos los datos del departamento pasado como parametro
         
         if(count($aDatosObtenidos)>1){ // si el codigo de departamento se encuentra en la base de datos
