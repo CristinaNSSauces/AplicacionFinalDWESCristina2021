@@ -79,7 +79,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    REST
+    RESTPropio
 
     
             <div class="phpdocumentor-element__package">
@@ -93,14 +93,14 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="model/REST.php"><a href="files/model-rest.html"><abbr title="model/REST.php">REST.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="model/RESTPropio.php"><a href="files/model-restpropio.html"><abbr title="model/RESTPropio.php">RESTPropio.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 </aside>
 
-            <p class="phpdocumentor-summary">REST</p>
+            <p class="phpdocumentor-summary">Class RESTPropio</p>
 
-    <section class="phpdocumentor-description"><p>Clase que se va a utilizar para crear usar diferentes api rest</p>
+    <section class="phpdocumentor-description"><p>Clase cuyos metodos son utilizados en los diferentes servicios REST creados</p>
 </section>
 
 
@@ -132,7 +132,7 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>28-01-2021</p>
+                                                 <section class="phpdocumentor-description"><p>01-02-2021</p>
 </section>
 
                                     </dd>
@@ -159,18 +159,11 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/REST.html#method_obtenerCentrosDeDia">obtenerCentrosDeDia()</a>
+    <a href="classes/RESTPropio.html#method_obtenerDatos">obtenerDatos()</a>
     <span>
                         &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
-<dd>obtenerCentrosDeDia</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/REST.html#method_obtenerFestivosEsp">obtenerFestivosEsp()</a>
-    <span>
-                        &nbsp;: array&lt;string|int, string&gt;    </span>
-</dt>
-<dd>obtenerFestivosEsp</dd>
+<dd>Metodo obtenerDatos()</dd>
 
         </dl>
 
@@ -183,7 +176,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/REST.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/RESTPropio.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -191,31 +184,30 @@
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_obtenerCentrosDeDia">
-        obtenerCentrosDeDia()
-        <a href="classes/REST.html#method_obtenerCentrosDeDia" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_obtenerDatos">
+        obtenerDatos()
+        <a href="classes/RESTPropio.html#method_obtenerDatos" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="model/REST.php"><a href="files/model-rest.html"><abbr title="model/REST.php">REST.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="model/RESTPropio.php"><a href="files/model-restpropio.html"><abbr title="model/RESTPropio.php">RESTPropio.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 </aside>
 
-        <p class="phpdocumentor-summary">obtenerCentrosDeDia</p>
+        <p class="phpdocumentor-summary">Metodo obtenerDatos()</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">obtenerCentrosDeDia</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nombreDistrito</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">obtenerDatos</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$codDepartamento</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
-        <section class="phpdocumentor-description"><p>Funcion para obtener los centros de dia mas cercanos de un distrito determinado de Madrid
-Si se resliza la conexion con el servidor devolverá un array con los datos necesarios para la respuesta,
-si por lo contrario se produce un error devolverá un array con los mensajes de error correspondientes</p>
+        <section class="phpdocumentor-description"><p>Metodo que nos permite obtener el codigo de departamento, descripcion y
+volumen de negocio de un departamento almacenado en la base de datos</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$nombreDistrito</span>
+                <span class="phpdocumentor-signature__argument__name">$codDepartamento</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -229,45 +221,7 @@ si por lo contrario se produce un error devolverá un array con los mensajes de 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
             &mdash;
-            <section class="phpdocumentor-description"><p>Array de respuestas</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_obtenerFestivosEsp">
-        obtenerFestivosEsp()
-        <a href="classes/REST.html#method_obtenerFestivosEsp" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="model/REST.php"><a href="files/model-rest.html"><abbr title="model/REST.php">REST.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">59</span>
-</aside>
-
-        <p class="phpdocumentor-summary">obtenerFestivosEsp</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">obtenerFestivosEsp</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
-
-        <section class="phpdocumentor-description"><p>Funcion para ontener los dias festivos en España
-Si se resliza la conexion con el servidor devolverá un array con los datos necesarios para la respuesta,
-si por lo contrario se produce un error devolverá un array con los mensajes de error correspondientes</p>
-</section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Array de respuestas</p>
+            <section class="phpdocumentor-description"><p>array con la informacion deseada o un mensaje de error si no se ha obtenido el resultado esperado</p>
 </section>
 
     
@@ -288,7 +242,7 @@ si por lo contrario se produce un error devolverá un array con los mensajes de 
 </section>
             </div>
         </div>
-        <a href="classes/REST.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/RESTPropio.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

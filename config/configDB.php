@@ -1,4 +1,7 @@
 <?php
+    //CLAVE API
+    define('KEY', 'dcb29f5a90e05bf17e238bc4fe0d51b73827a7d2b28e1b3ddaf3fe0aa5e8bca8'); // clave Servicio Rest encriptada
+
     //CONFIGURACIÓN CASA
     /*
     define('DNS', 'mysql:host=192.168.1.215;dbname=DAW215DBProyectoTema5;charset=UTF8');//Dirección IP y nombre de la base de datos

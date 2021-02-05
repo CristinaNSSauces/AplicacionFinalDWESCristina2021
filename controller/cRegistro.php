@@ -3,8 +3,7 @@
 $_SESSION['paginaAnterior'] = $controladores ['registro'];
 
 if(isset($_REQUEST['Cancelar'])){
-    
-    $_SESSION['paginaEnCurso'] = $controladores['login']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del login
+    $_SESSION['paginaEnCursoSinRegistro'] = $controladores['login'];
     header('Location: index.php');
     exit;
 }

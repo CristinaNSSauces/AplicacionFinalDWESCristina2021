@@ -5,10 +5,15 @@
   margin: 0%;
 }
 
+.posicionar{
+  min-height: 100vh;
+  position: relative;
+}
+
 nav {
   background-color: #333333;
   height: 5vh;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +39,8 @@ nav ul #logo {
 }
 
 main {
-  height: 85vh;
+  min-height: 85vh;
+  height: auto;
 }
 
 #enlaces {
@@ -52,7 +58,7 @@ main {
           align-items: center;
 }
 
-/* #enlaces ul {
+#enlaces ul {
   list-style: none;
   width: 50%;
   height: 50%;
@@ -69,21 +75,11 @@ main {
 
 #enlaces ul li a:hover {
   text-decoration: underline;
-} */
-
-.volver{
-  background-color: transparent;
-  color: #0066CC;
-  border: none;
-  width: 111%;
-  text-align: center;
-  font-size: 15px;
-  padding-left: 12%;
 }
 
 #inicioSesion {
-  width: 100%;
-  height: 70%;
+  width: 50%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,8 +96,8 @@ main {
 }
 
 #inicioSesion form {
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  height: 50%;
 }
 
 #inicioSesion form h3 {
@@ -133,6 +129,9 @@ main {
 footer {
   background-color: #F5F5F7;
   height: 10vh;
+  position: absolute;
+  bottom: -10vh;
+  width: 100%;
 }
 
 footer table {
@@ -226,6 +225,7 @@ footer table tr .derechos {
 .navInicio {
   background-color: #333333;
   height: 5vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -663,6 +663,7 @@ footer table tr .derechos {
   width: 70px;
   font-size: 15px;
 }
+
 .mainConsultarEditarDepartamento #consultarEditarDepartamento {
   width: 100%;
   height: 100%;
@@ -1228,131 +1229,4 @@ footer table tr .derechos {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.mainRest{
-  width: 100%;
-  height: 85vh;
-  display: flex;
-  justify-content: center;
-  overflow: auto;
-}
-
-.mainRest form{
-  max-height: 250px;
-  overflow: auto;
-}
-
-.tecnologias {
-  background-color: transparent;
-  border: none;
-  color: #6B6B6E;
-}
-
-.tecnologias:hover {
-  text-decoration: underline;
-}
-
-/* SLIDER */
-.mainPrincipal {
-  background-color: #E6E6E6;
-}
-
-.mySlides {
-  display: none;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  padding-top: 3%;
-  max-width: 75%;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-
-/* Caption text */
-.text {
-  color: black;
-  font-size: 15px;
-  /* padding: 8px 12px; */
-  position: absolute;
-  bottom: 50%;
-  right: 33%;
-  width: 100%;
-  text-align: center;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-      opacity: .4
-  }
-
-  to {
-      opacity: 1
-  }
-}
-
-@keyframes fade {
-  from {
-      opacity: .4
-  }
-
-  to {
-      opacity: 1
-  }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-
-  .prev,
-  .next,
-  .text {
-      font-size: 11px
-  }
-}
+/*# sourceMappingURL=estilo.css.map */

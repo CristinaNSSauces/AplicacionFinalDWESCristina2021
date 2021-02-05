@@ -65,14 +65,6 @@ if($entradaOK){
     $_SESSION['paginaEnCurso'] = $controladores['inicio']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del inicios
     header('Location: index.php');
     exit;
-    /*
-    $sqlImagen = "Update T01_Usuario set T01_ImagenUsuario = :Imagen where T01_CodUsuario=:CodUsuario";
-    $consultaImagen = $miDB->prepare($sqlImagen);//Preparamos la consulta
-    $parametrosImagen = [":Imagen" => $imagenSubida,
-                            ":CodUsuario" => $_SESSION['usuarioDAW215MtoDepartamentosTema5']];
-
-    $consultaImagen->execute($parametrosImagen);//Ejecutamos la consulta
-    */
 }
 
 

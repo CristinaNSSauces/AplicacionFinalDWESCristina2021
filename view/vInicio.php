@@ -3,7 +3,7 @@
         <li id="logo">CNS</li>
         <li>Inicio</li>
     </ul>
-    <form class="forNavInicio" action="" method="post">
+    <form class="forNavInicio" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
         <button class="botonNav" name="rest">Rest</button>
         <button class="botonNav" name="mtoDepartamentos">Mto Departamentos</button>
         <button class="botonNav" name="editarPerfil">Editar Perfil</button>
@@ -13,14 +13,14 @@
 <main class="mainInicio">
     <div id="imagen">
         <?php
-            if($oUsuarioActual->imagenPerfil!=null){
+            if(isset($oUsuarioActual->imagenPerfil)){
                 echo '<img style="margin-rigth: 2px;" src = "data:image/png;base64,' . base64_encode($oUsuarioActual->imagenPerfil) . '" width = "100px"/>';
             }
         ?>
     </div>
     <div id="inicio">
-        <h1>Bienvenido/a <?php echo $descUsuario?></h1>
-        <p><?php echo ($numConexiones > 1) ? "Número de conexiones: ".$numConexiones: "Es la primera vez que se conecta" ?></p>
-        <p><?php echo ($ultimaConexion != null) ? "Fecha Hora última conexión: ".date('d/m/Y H:i:s',$ultimaConexion) : null; ?> </p>
+        <h1>Bienvenido/a <?php echo $oUsuarioActual->descUsuario?></h1>
+        <p><?php echo ($oUsuarioActual->numConexiones > 1) ? "Esta es la ".$oUsuarioActual->numConexiones." vez que se conecta" : "Es la primera vez que se conecta" ?></p>
+        <p><?php echo isset($ultimaConexion) ? "Se conectó por última vez el ".date('d/m/Y',$ultimaConexion)." a las ".date('H:i:s',$ultimaConexion) : null; ?> </p>
     </div>
 </main>
