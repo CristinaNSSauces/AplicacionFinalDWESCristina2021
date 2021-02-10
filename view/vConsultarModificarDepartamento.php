@@ -13,23 +13,25 @@
             <br>
             <div>
                 <label for="CodDepartamento">Código de departamento (*)</label><br>
-                <input class="codigoDep" type="text" id="CodDepartamento" name="CodDepartamento" readonly value="">
+                <input class="codigoDep" type="text" id="CodDepartamento" name="CodDepartamento" readonly value="<?php echo $oDepartamento->codDepartamento; ?>">
                 <br><br>
 
                 <label for="DescDepartamento" >Descripción de departamento</label><br>
-                <input class="campos" type="text" id="DescDepartamento" name="DescDepartamento" value="">
+                <input class="campos" type="text" id="DescDepartamento" name="DescDepartamento" value="<?php echo isset($_REQUEST['CodUsuario']) ? $_REQUEST['CodUsuario'] : $oDepartamento->descDepartamento; ?>">
+                <?php echo isset($aErrores['DescDepartamento']) ? '<p style="color: red;">'. $aErrores['DescDepartamento'].'</p>' : null; ?>
                 <br><br>
 
                 <label for="FechaCreacion">Fecha de creación (*)</label><br>
-                <input class="fechaDep" type="text" id="FechaCreacion" name="FechaCreacion" readonly value="">
+                <input class="fechaDep" type="text" id="FechaCreacion" name="FechaCreacion" readonly value="<?php echo date('d/m/Y',$oDepartamento->fechaCreacionDepartamento); ?>">
                 <br><br>
 
                 <label for="FechaBaja">Fecha de baja (*)</label><br>
-                <input class="fechaDep" type="text" id="FechaBaja" name="FechaBaja" readonly value="">
+                <input class="fechaDep" type="text" id="FechaBaja" name="FechaBaja" readonly value="<?php echo isset($oDepartamento->fechaBajaDepartamento) ? date('d/m/Y',$oDepartamento->fechaBajaDepartamento) : "null"; ?>">
                 <br><br>
 
                 <label for="VolumenNegocio">Volumen de negocio</label><br>
-                <input class="vNegocio" type="text" id="FechaHoraUltimaConexion" name="FechaHoraUltimaConexion" value="">
+                <input class="vNegocio" type="text" id="VolumenNegocio" name="VolumenNegocio" value="<?php echo isset($_REQUEST['CodUsuario']) ? $_REQUEST['CodUsuario'] : $oDepartamento->volumenDeNegocio; ?>">
+                <?php echo isset($aErrores['VolumenNegocio']) ? '<p style="color: red;">'. $aErrores['VolumenNegocio'].'</p>' : null; ?>
                 <br><br>
             </div>
             <div>

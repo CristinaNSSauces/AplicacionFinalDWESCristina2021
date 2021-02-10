@@ -19,7 +19,14 @@ $controladores = [
     "miCuenta" => "controller/cMiCuenta.php",
     "borrarCuenta" => "controller/cBorrarCuenta.php",
     "cambiarPassword" => "controller/cCambiarPassword.php",
-    "mtoDepartamentos" => "controller/cMtoDepartamentos.php"
+    "mtoDepartamentos" => "controller/cMtoDepartamentos.php",
+    "consultarModificar" => "controller/cConsultarModificarDepartamento.php",
+    "borrar" => "controller/cEliminarDepartamento.php",
+    "bajaLogica" => "controller/cBajaLogicaDepartamento.php",
+    "rehabilitar" => "controller/cRehabilitacionDepartamento.php",
+    "añadir" => "controller/cAltaDepartamento.php",
+    "importar" => "controller/cImportarDepartamentos.php",
+    "exportar" => "controller/cExportarDepartamentos.php"
 ];
 
 $vistas = [
@@ -33,6 +40,13 @@ $vistas = [
     "miCuenta" => "view/vMiCuenta.php",
     "borrarCuenta" => "view/vBorrarCuenta.php",
     "cambiarPassword" => "view/vCambiarPassword.php",
-    "mtoDepartamentos" => "view/vMtoDepartamentos.php"
+    "mtoDepartamentos" => "view/vMtoDepartamentos.php",
+    "consultarModificar" => "view/vConsultarModificarDepartamento.php",
+    "borrar" => "view/vEliminarDepartamento.php",
+    "bajaLogica" => "view/vBajaLogicaDepartamento.php",
+    "rehabilitar" => "view/vRehabilitacionDepartamento.php",
+    "añadir" => "view/vAltaDepartamento.php",
+    "importar" => "view/vImportarDepartamentos.php",
+    "exportar" => "view/vExportarDepartamentos.php"
 ];
 ?>

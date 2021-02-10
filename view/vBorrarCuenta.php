@@ -11,7 +11,7 @@
             <br>
             <div>
                 <h4>¿Está seguro de querer eliminar su cuenta?</h4>
-                <h5>Eliminará su cuenta y sus datos definitivamente</h5>
+                <h5><img src="webroot/media/images/atencion.png" width="15px">  Eliminará su cuenta y sus datos definitivamente</h5>
                 <br>
                 <label for="Password">Contraseña</label><br>
                 <input class="campos" type="password" id="Password" name="Password" value="">
