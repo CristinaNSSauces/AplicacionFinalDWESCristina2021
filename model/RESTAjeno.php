@@ -103,7 +103,7 @@ class RESTAjeno{
         $aParametros = ['codDepartamento' => $codDepartamento,
                         'key' => hash('sha256', $key)]; // array con los parametros introducidos por el usuario
 
-        $conexionCurl = curl_init('http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/api/servicioDepartamento.php'); // iniciamos sesion
+        $conexionCurl = curl_init('http://192.168.1.215/AplicacionFinalDWESCristina2021/api/servicioDepartamento.php'); // iniciamos sesion
 
         curl_setopt($conexionCurl, CURLOPT_POSTFIELDS, $aParametros); // preparamos los parametros por metodo post
         
