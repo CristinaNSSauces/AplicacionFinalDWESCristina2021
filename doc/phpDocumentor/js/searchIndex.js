@@ -171,11 +171,6 @@ Search.appendIndex(
             "summary": "Metodo\u0020obtenerDatosDepartamento\u0028\u0029",
             "url": "classes/DepartamentoPDO.html#method_obtenerDatosDepartamento"
         },                {
-            "fqsen": "\\DepartamentoPDO\u003A\u003AbuscarDepartamentosPorCodigo\u0028\u0029",
-            "name": "buscarDepartamentosPorCodigo",
-            "summary": "Metodo\u0020buscarDepartamentosPorCodigo\u0028\u0029",
-            "url": "classes/DepartamentoPDO.html#method_buscarDepartamentosPorCodigo"
-        },                {
             "fqsen": "\\DepartamentoPDO\u003A\u003AbuscarDepartamentosPorDescripcion\u0028\u0029",
             "name": "buscarDepartamentosPorDescripcion",
             "summary": "Metodo\u0020buscaDepartamentosPorDescripcion\u0028\u0029",
@@ -210,6 +205,16 @@ Search.appendIndex(
             "name": "validarCodNoExiste",
             "summary": "Metodo\u0020validarCodNoExiste\u0028\u0029",
             "url": "classes/DepartamentoPDO.html#method_validarCodNoExiste"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AexportarDepartamentos\u0028\u0029",
+            "name": "exportarDepartamentos",
+            "summary": "Metodo\u0020exportarDepartamentos\u0028\u0029",
+            "url": "classes/DepartamentoPDO.html#method_exportarDepartamentos"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AimportarDepartamentos\u0028\u0029",
+            "name": "importarDepartamentos",
+            "summary": "Metodo\u0020importarDepartamentos\u0028\u0029",
+            "url": "classes/DepartamentoPDO.html#method_importarDepartamentos"
         },                {
             "fqsen": "\\RESTAjeno",
             "name": "RESTAjeno",

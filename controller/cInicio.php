@@ -15,7 +15,7 @@ if(isset($_REQUEST['editarPerfil'])){
 }
 
 if(isset($_REQUEST['mtoDepartamentos'])){
-    $_SESSION['paginaEnCurso'] = $controladores['wip']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del work in progress
+    $_SESSION['paginaEnCurso'] = $controladores['mtoDepartamentos']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del work in progress
     header('Location: index.php');
     exit;
 }

@@ -4,9 +4,9 @@
         <li>Mto Departamentos</li>
     </ul>
     <form class="forNavInicio" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
-        <button class="botonNav" name="mtoDepartamentos">Exportar</button>
-        <button class="botonNav" name="editarPerfil">Importar</button>
-        <button class="botonNav" name="cerrarSesion">Añadir</button>
+        <button class="botonNav" name="exportar">Exportar</button>
+        <button class="botonNav" name="importar">Importar</button>
+        <button class="botonNav" name="añadir">Añadir</button>
     </form>
 </nav>
 <main class="mainMtoDepartamentos">
@@ -14,12 +14,7 @@
         <br>
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
             <label for="Departamento" >Departamento: </label>
-            <input class="campos" type="text" id="Departamento" name="Departamento" value="<?php echo $busquedaDepartamento ?>"><br><br>
-            <input type="radio" id="BuscarCodDepartamento" name="BuscarDepartamento" value="BuscarCodDepartamento" <?php echo $criterioBusqueda == 'BuscarCodDepartamento' ? 'checked' : null; ?>>
-            <label for="BuscarCodDepartamento">Buscar por código</label>
-            <span>&nbsp;&nbsp;&nbsp;</span>
-            <input type="radio" id="BuscarDescDepartamento" name="BuscarDepartamento" value="BuscarDescDepartamento" <?php echo $criterioBusqueda == 'BuscarDescDepartamento' ? 'checked' : null; ?>>
-            <label for="BuscarDescDepartamento">Buscar por descripción</label><br><br>
+            <input class="campos" type="text" id="Departamento" name="Departamento" value="<?php echo $busquedaDepartamento ?>">
             <input class="enviar" type="submit" value="Buscar" name="Buscar">
         </form>
     </div>
@@ -43,8 +38,14 @@
                     <?php
                         foreach ($aDepartamentos as $numDepartamento => $oDepartamento) {
                             $codigoDepartamento = $oDepartamento->codDepartamento;
+                            $fechaBaja = $oDepartamento->fechaBajaDepartamento;
+                            if(isset($fechaBaja)){
+                                $colorTexto = "#F53D3D";
+                            }else{
+                                $colorTexto = "#2CD000";
+                            }
                     ?>
-                            <tr>
+                            <tr style="color: <?php echo $colorTexto ?>;">
                                 <td class="campoCod"><?php echo $codigoDepartamento; ?></td>
                                 <td class="campoDescripcion"><?php echo $oDepartamento->descDepartamento; ?></td>
                                 <td><?php echo date('d/m/Y',$oDepartamento->fechaCreacionDepartamento); ?></td>
@@ -64,11 +65,11 @@
         <form id="formularioPaginacion" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
             <table>
                 <tr>
-                    <td><button type="submit"><img src="webroot/media/images/pagInicial.png" alt="editar departamento" width="30px"></button></td>
-                    <td><button type="submit"><img src="webroot/media/images/pagAnterior.png" alt="editar departamento" width="30px"></button></td>
-                    <td>1 de 1</td>
-                    <td><button type="submit"><img src="webroot/media/images/pagSiguiente.png" alt="editar departamento" width="30px"></button></td>
-                    <td><button type="submit"><img src="webroot/media/images/pagFinal.png" alt="editar departamento" width="30px"></button></td>
+                    <td><button <?php echo ($paginaActual==1 ? "hidden" : null);?> type="submit" value="1" name="paginaInicial"><img src="webroot/media/images/pagInicial.png" alt="editar departamento" width="30px"></button></td>
+                    <td><button <?php echo ($paginaActual==1 ? "hidden" : null);?> type="submit" value="<?php echo $paginaActual-1; ?>" name="retrocederPagina"><img src="webroot/media/images/pagAnterior.png" alt="editar departamento" width="30px"></button></td>
+                    <td><?php echo $paginaActual." de ".$paginasTotales; ?></td>
+                    <td><button <?php echo ($paginaActual>=$paginasTotales ? "hidden" : null);?> type="submit" value="<?php echo $paginaActual+1; ?>" name="avanzarPagina"><img src="webroot/media/images/pagSiguiente.png" alt="editar departamento" width="30px"></button></td>
+                    <td><button <?php echo ($paginaActual>=$paginasTotales ? "hidden" : null);?> type="submit" value="<?php echo $paginasTotales ?>" name="paginaFinal"><img src="webroot/media/images/pagFinal.png" alt="editar departamento" width="30px"></button></td>
                 </tr>
             </table>
         </form>

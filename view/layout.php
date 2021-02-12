@@ -6,6 +6,7 @@
             <title>AplicaionFinal</title>
             <link rel="stylesheet" href="webroot/css/estilo.css">
             <script src="webroot/js/script.js"></script>
+            <script src="webroot/js/validarRegistro.js"></script>
         </head>
         <body>
 

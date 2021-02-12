@@ -17,8 +17,8 @@
         </div>
 
         <div class="mySlides fade">
-            <a href="doc/210130DiagramaDeClases.pdf" target="_blank">
-                <img src="webroot/media/images/imagen2.JPG" style="width:100%">
+            <a href="doc/DiagramaDeClases.pdf" target="_blank">
+                <img src="webroot/media/images/DiagramaDeClases2021.svg" style="width:100%">
                 <div class="text">Diagrama de clases</div>
             </a>
         </div>

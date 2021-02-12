@@ -5,13 +5,21 @@
         <link>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/</link>
         <description>Aplicacion final DWES Cristina Nuñez Sebastian</description>
         <language>es</language>
-        <lastBuildDate>Thu, 04 Feb 2021 18:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 11 Feb 2021 18:00:00 GMT</lastBuildDate>
+
+        <item>
+            <title>Mto Departamentos Completo</title>
+            <link> http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021</link>
+            <description>Nueva funcionalidad, mantenimiento de departamentos completo</description>
+            <guid>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/mtodepartamentos</guid>
+            <pubDate>Thu, 11 Feb 2021 18:00:00 GMT</pubDate>
+        </item>
 
         <item>
             <title>Servicios de REST</title>
             <link> http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021</link>
             <description>Nueva funcionalidad, uso de servicios REST propios y ajenos</description>
-            <guid>http://192.168.8.217/AplicacionFinalDWESCristina2021/REST</guid>
+            <guid>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/REST</guid>
             <pubDate>Thu, 04 Feb 2021 18:00:00 GMT</pubDate>
         </item>
 
@@ -19,7 +27,7 @@
             <title>Funcionalidad de Registro</title>
             <link> http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021</link>
             <description>Nueva funcionalidad de registro</description>
-            <guid>http://192.168.8.217/AplicacionFinalDWESCristina2021/registro</guid>
+            <guid>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/registro</guid>
             <pubDate>Fri, 29 Jan 2021 18:00:00 GMT</pubDate>
         </item>
 

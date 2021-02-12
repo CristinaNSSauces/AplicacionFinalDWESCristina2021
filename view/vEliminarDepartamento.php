@@ -10,28 +10,28 @@
             <h3>Eliminar Departamento</h3>
             <br>
             <h4>Campos bloqueados (*)</h4>
-            <h5><img src="images/atencion.png" width="15px">  Eliminarás este departamento de forma permanente</h5>
+            <h5><img src="webroot/media/images/atencion.png" width="15px">  Eliminarás este departamento de forma permanente</h5>
 
             <br>
             <div>
                 <label for="CodDepartamento">Código de departamento (*)</label><br>
-                <input class="codigoDep" type="text" id="CodDepartamento" name="CodDepartamento" readonly value="">
+                <input class="codigoDep" type="text" id="CodDepartamento" name="CodDepartamento" readonly value="<?php echo $oDepartamento->codDepartamento; ?>">
                 <br><br>
 
                 <label for="DescDepartamento" >Descripción de departamento (*)</label><br>
-                <input class="campos" type="text" id="DescDepartamento" name="DescDepartamento" readonly value="">
+                <input class="campos" type="text" id="DescDepartamento" name="DescDepartamento" readonly value="<?php echo $oDepartamento->descDepartamento; ?>">
                 <br><br>
 
                 <label for="FechaCreacion">Fecha de creación (*)</label><br>
-                <input class="fechaDep" type="text" id="FechaCreacion" name="FechaCreacion" readonly value="">
+                <input class="fechaDep" type="text" id="FechaCreacion" name="FechaCreacion" readonly value="<?php echo date('d/m/Y',$oDepartamento->fechaCreacionDepartamento); ?>">
                 <br><br>
 
                 <label for="FechaBaja">Fecha de baja (*)</label><br>
-                <input class="fechaDep" type="text" id="FechaBaja" name="FechaBaja" readonly value="">
+                <input class="fechaDep" type="text" id="FechaBaja" name="FechaBaja" readonly value="<?php echo isset($oDepartamento->fechaBajaDepartamento) ? date('d/m/Y',$oDepartamento->fechaBajaDepartamento) : "null"; ?>">
                 <br><br>
 
                 <label for="VolumenNegocio">Volumen de negocio (*)</label><br>
-                <input class="vNegocio" type="text" id="FechaHoraUltimaConexion" name="FechaHoraUltimaConexion" readonly value="">
+                <input class="vNegocio" type="text" id="VolumenNegocio" name="VolumenNegocio" readonly value="<?php echo $oDepartamento->volumenDeNegocio; ?>">
                 <br><br>
             </div>
             <div>
