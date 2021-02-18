@@ -81,15 +81,190 @@ Search.appendIndex(
             "summary": "Funcion\u0020validarTelefono",
             "url": "classes/validacionFormularios.html#method_validarTelefono"
         },                {
+            "fqsen": "\\Calculadora",
+            "name": "Calculadora",
+            "summary": "Class\u0020Calculadora",
+            "url": "classes/Calculadora.html"
+        },                {
+            "fqsen": "\\Calculadora\u003A\u003ASumar\u0028\u0029",
+            "name": "Sumar",
+            "summary": "Metodo\u0020Sumar\u0028\u0029",
+            "url": "classes/Calculadora.html#method_Sumar"
+        },                {
+            "fqsen": "\\Calculadora\u003A\u003ARestar\u0028\u0029",
+            "name": "Restar",
+            "summary": "Metodo\u0020Restar\u0028\u0029",
+            "url": "classes/Calculadora.html#method_Restar"
+        },                {
+            "fqsen": "\\Calculadora\u003A\u003AMultiplicar\u0028\u0029",
+            "name": "Multiplicar",
+            "summary": "Metodo\u0020Multiplicar\u0028\u0029",
+            "url": "classes/Calculadora.html#method_Multiplicar"
+        },                {
+            "fqsen": "\\Calculadora\u003A\u003ADividir\u0028\u0029",
+            "name": "Dividir",
+            "summary": "Metodo\u0020Dividir\u0028\u0029",
+            "url": "classes/Calculadora.html#method_Dividir"
+        },                {
             "fqsen": "\\DBPDO",
             "name": "DBPDO",
             "summary": "Class\u0020DBPDO",
             "url": "classes/DBPDO.html"
         },                {
-            "fqsen": "\\DBPDO\u003A\u003AejecutaConsulta\u0028\u0029",
-            "name": "ejecutaConsulta",
+            "fqsen": "\\DBPDO\u003A\u003AejecutarConsulta\u0028\u0029",
+            "name": "ejecutarConsulta",
             "summary": "Metodo\u0020ejecutarConsulta\u0028\u0029",
-            "url": "classes/DBPDO.html#method_ejecutaConsulta"
+            "url": "classes/DBPDO.html#method_ejecutarConsulta"
+        },                {
+            "fqsen": "\\Departamento",
+            "name": "Departamento",
+            "summary": "Class\u0020Departamento",
+            "url": "classes/Departamento.html"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Metodo\u0020magico\u0020__construct\u0028\u0029",
+            "url": "classes/Departamento.html#method___construct"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "Metodo\u0020magico\u0020__set\u0028\u0029",
+            "url": "classes/Departamento.html#method___get"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A__set\u0028\u0029",
+            "name": "__set",
+            "summary": "Metodo\u0020magico\u0020__set\u0028\u0029",
+            "url": "classes/Departamento.html#method___set"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A\u0024codDepartamento",
+            "name": "codDepartamento",
+            "summary": "Codigo\u0020del\u0020departamento",
+            "url": "classes/Departamento.html#property_codDepartamento"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A\u0024descDepartamento",
+            "name": "descDepartamento",
+            "summary": "Descripcion\u0020del\u0020departamento",
+            "url": "classes/Departamento.html#property_descDepartamento"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A\u0024fechaCreacionDepartamento",
+            "name": "fechaCreacionDepartamento",
+            "summary": "Fecha\u0020de\u0020creacion\u0020del\u0020departamento",
+            "url": "classes/Departamento.html#property_fechaCreacionDepartamento"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A\u0024volumenDeNegocio",
+            "name": "volumenDeNegocio",
+            "summary": "Volumen\u0020de\u0020negocio\u0020del\u0020departamento",
+            "url": "classes/Departamento.html#property_volumenDeNegocio"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A\u0024fechaBajaDepartamento",
+            "name": "fechaBajaDepartamento",
+            "summary": "Fecha\u0020Baja\u0020del\u0020departamento",
+            "url": "classes/Departamento.html#property_fechaBajaDepartamento"
+        },                {
+            "fqsen": "\\DepartamentoPDO",
+            "name": "DepartamentoPDO",
+            "summary": "Class\u0020DepartamentoPDO",
+            "url": "classes/DepartamentoPDO.html"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AobtenerDatosDepartamento\u0028\u0029",
+            "name": "obtenerDatosDepartamento",
+            "summary": "Metodo\u0020obtenerDatosDepartamento\u0028\u0029",
+            "url": "classes/DepartamentoPDO.html#method_obtenerDatosDepartamento"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AbuscarDepartamentosPorDescripcion\u0028\u0029",
+            "name": "buscarDepartamentosPorDescripcion",
+            "summary": "Metodo\u0020buscaDepartamentosPorDescripcion\u0028\u0029",
+            "url": "classes/DepartamentoPDO.html#method_buscarDepartamentosPorDescripcion"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AaltaDepartamento\u0028\u0029",
+            "name": "altaDepartamento",
+            "summary": "Metodo\u0020altaDepartamento\u0028\u0029",
+            "url": "classes/DepartamentoPDO.html#method_altaDepartamento"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AbajaFisicaDepartamento\u0028\u0029",
+            "name": "bajaFisicaDepartamento",
+            "summary": "Metodo\u0020bajaFisicaDepartamento\u0028\u0029",
+            "url": "classes/DepartamentoPDO.html#method_bajaFisicaDepartamento"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AbajaLogicaDepartamento\u0028\u0029",
+            "name": "bajaLogicaDepartamento",
+            "summary": "Metodo\u0020bajaLogicaDepartamento\u0028\u0029",
+            "url": "classes/DepartamentoPDO.html#method_bajaLogicaDepartamento"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AmodificarDepartamento\u0028\u0029",
+            "name": "modificarDepartamento",
+            "summary": "Metodo\u0020modificarDepartamento\u0028\u0029",
+            "url": "classes/DepartamentoPDO.html#method_modificarDepartamento"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003ArehabilitacionDepartamento\u0028\u0029",
+            "name": "rehabilitacionDepartamento",
+            "summary": "Metodo\u0020rehabilitacionDepartamento\u0028\u0029",
+            "url": "classes/DepartamentoPDO.html#method_rehabilitacionDepartamento"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AvalidarCodNoExiste\u0028\u0029",
+            "name": "validarCodNoExiste",
+            "summary": "Metodo\u0020validarCodNoExiste\u0028\u0029",
+            "url": "classes/DepartamentoPDO.html#method_validarCodNoExiste"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AexportarDepartamentos\u0028\u0029",
+            "name": "exportarDepartamentos",
+            "summary": "Metodo\u0020exportarDepartamentos\u0028\u0029",
+            "url": "classes/DepartamentoPDO.html#method_exportarDepartamentos"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AimportarDepartamentos\u0028\u0029",
+            "name": "importarDepartamentos",
+            "summary": "Metodo\u0020importarDepartamentos\u0028\u0029",
+            "url": "classes/DepartamentoPDO.html#method_importarDepartamentos"
+        },                {
+            "fqsen": "\\RESTAjeno",
+            "name": "RESTAjeno",
+            "summary": "RESTAjeno",
+            "url": "classes/RESTAjeno.html"
+        },                {
+            "fqsen": "\\RESTAjeno\u003A\u003AobtenerCentrosDeDia\u0028\u0029",
+            "name": "obtenerCentrosDeDia",
+            "summary": "obtenerCentrosDeDia",
+            "url": "classes/RESTAjeno.html#method_obtenerCentrosDeDia"
+        },                {
+            "fqsen": "\\RESTAjeno\u003A\u003AobtenerFestivosEsp\u0028\u0029",
+            "name": "obtenerFestivosEsp",
+            "summary": "obtenerFestivosEsp",
+            "url": "classes/RESTAjeno.html#method_obtenerFestivosEsp"
+        },                {
+            "fqsen": "\\RESTAjeno\u003A\u003AobtenerVolumenDeNegocio\u0028\u0029",
+            "name": "obtenerVolumenDeNegocio",
+            "summary": "obtenerVolumenDeNegocio",
+            "url": "classes/RESTAjeno.html#method_obtenerVolumenDeNegocio"
+        },                {
+            "fqsen": "\\RESTAjeno\u003A\u003AobtenerDatosDepartamentoPOST\u0028\u0029",
+            "name": "obtenerDatosDepartamentoPOST",
+            "summary": "obtenerVolumenDeNegocioPOST",
+            "url": "classes/RESTAjeno.html#method_obtenerDatosDepartamentoPOST"
+        },                {
+            "fqsen": "\\RESTPropio",
+            "name": "RESTPropio",
+            "summary": "Class\u0020RESTPropio",
+            "url": "classes/RESTPropio.html"
+        },                {
+            "fqsen": "\\RESTPropio\u003A\u003AobtenerDatos\u0028\u0029",
+            "name": "obtenerDatos",
+            "summary": "Metodo\u0020obtenerDatos\u0028\u0029",
+            "url": "classes/RESTPropio.html#method_obtenerDatos"
+        },                {
+            "fqsen": "\\RESTPropio\u003A\u003AobtenerUsuarios\u0028\u0029",
+            "name": "obtenerUsuarios",
+            "summary": "Metodo\u0020obtenerUsuarios\u0028\u0029",
+            "url": "classes/RESTPropio.html#method_obtenerUsuarios"
+        },                {
+            "fqsen": "\\RESTPropio\u003A\u003AobtenerUsuarioPorDescripcion\u0028\u0029",
+            "name": "obtenerUsuarioPorDescripcion",
+            "summary": "Metodo\u0020obtenerUsuarioPorDescripcion\u0028\u0029",
+            "url": "classes/RESTPropio.html#method_obtenerUsuarioPorDescripcion"
+        },                {
+            "fqsen": "\\RESTPropio\u003A\u003AeliminarUsuario\u0028\u0029",
+            "name": "eliminarUsuario",
+            "summary": "Metodo\u0020eliminarUsuario\u0028\u0029",
+            "url": "classes/RESTPropio.html#method_eliminarUsuario"
         },                {
             "fqsen": "\\Usuario",
             "name": "Usuario",
@@ -146,6 +321,16 @@ Search.appendIndex(
             "summary": "Datos\u0020de\u0020la\u0020imagen\u0020en\u0020formato\u0020binario\u0020de\u0020la\u0020base\u0020de\u0020datos",
             "url": "classes/Usuario.html#property_imagenPerfil"
         },                {
+            "fqsen": "\\UsuarioDB",
+            "name": "UsuarioDB",
+            "summary": "Interface\u0020UsuarioDB",
+            "url": "classes/UsuarioDB.html"
+        },                {
+            "fqsen": "\\UsuarioDB\u003A\u003AvalidarUsuario\u0028\u0029",
+            "name": "validarUsuario",
+            "summary": "Metodo\u0020validarUsuario\u0028\u0029",
+            "url": "classes/UsuarioDB.html#method_validarUsuario"
+        },                {
             "fqsen": "\\UsuarioPDO",
             "name": "UsuarioPDO",
             "summary": "Class\u0020UsuarioPDO",
@@ -160,6 +345,11 @@ Search.appendIndex(
             "name": "altaUsuario",
             "summary": "Metodo\u0020altaUsuario\u0028\u0029",
             "url": "classes/UsuarioPDO.html#method_altaUsuario"
+        },                {
+            "fqsen": "\\UsuarioPDO\u003A\u003AregistrarUltimaConexion\u0028\u0029",
+            "name": "registrarUltimaConexion",
+            "summary": "Metodo\u0020registrarUltimaConexion\u0028\u0029",
+            "url": "classes/UsuarioPDO.html#method_registrarUltimaConexion"
         },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AmodificarUsuario\u0028\u0029",
             "name": "modificarUsuario",
@@ -181,30 +371,10 @@ Search.appendIndex(
             "summary": "Metodo\u0020validarCodNoExiste\u0028\u0029",
             "url": "classes/UsuarioPDO.html#method_validarCodNoExiste"
         },                {
-            "fqsen": "\\UsuarioDB",
-            "name": "UsuarioDB",
-            "summary": "Interface\u0020UsuarioDB",
-            "url": "classes/UsuarioDB.html"
-        },                {
-            "fqsen": "\\UsuarioDB\u003A\u003AvalidarUsuario\u0028\u0029",
-            "name": "validarUsuario",
-            "summary": "Metodo\u0020validarUsuario\u0028\u0029",
-            "url": "classes/UsuarioDB.html#method_validarUsuario"
-        },                {
-            "fqsen": "\\REST",
-            "name": "REST",
-            "summary": "REST",
-            "url": "classes/REST.html"
-        },                {
-            "fqsen": "\\REST\u003A\u003AobtenerCentrosDeDia\u0028\u0029",
-            "name": "obtenerCentrosDeDia",
-            "summary": "obtenerCentrosDeDia",
-            "url": "classes/REST.html#method_obtenerCentrosDeDia"
-        },                {
-            "fqsen": "\\REST\u003A\u003AobtenerFestivosEsp\u0028\u0029",
-            "name": "obtenerFestivosEsp",
-            "summary": "obtenerFestivosEsp",
-            "url": "classes/REST.html#method_obtenerFestivosEsp"
+            "fqsen": "\\UsuarioPDO\u003A\u003AobtenerDatosUsuario\u0028\u0029",
+            "name": "obtenerDatosUsuario",
+            "summary": "Metodo\u0020obtenerDatosUsuario\u0028\u0029",
+            "url": "classes/UsuarioPDO.html#method_obtenerDatosUsuario"
         },                {
             "fqsen": "\\",
             "name": "\\",

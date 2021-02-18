@@ -3,17 +3,16 @@
 $_SESSION['paginaAnterior'] = $controladores ['registro'];
 
 if(isset($_REQUEST['Cancelar'])){
-    
-    $_SESSION['paginaEnCurso'] = $controladores['login']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del login
+    $_SESSION['paginaEnCursoSinRegistro'] = $controladores['login'];
     header('Location: index.php');
     exit;
 }
 
-if(isset($_REQUEST['Tecnologias'])){ //  Si el usuario ha pulsado el boton Tecnoologias
-    $_SESSION['paginaEnCursoSinRegistro'] = $controladores['wip']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del registro
-    header('Location: index.php');
-    exit;
-}
+// if(isset($_REQUEST['Tecnologias'])){ //  Si el usuario ha pulsado el boton Tecnoologias
+//     $_SESSION['paginaEnCursoSinRegistro'] = $controladores['tecnologias']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del registro
+//     header('Location: index.php');
+//     exit;
+// }
 
 define("OBLIGATORIO", 1); // defino e inicializo la constante a 1 para los campos que son obligatorios
 
@@ -28,7 +27,7 @@ $aErrores = [ //declaro e inicializo el array de errores
 
 
 if (isset($_REQUEST["Registrarse"])) { // comprueba que el usuario le ha dado a al boton de IniciarSesion y valida la entrada de todos los campos
-    $aErrores['CodUsuario'] = validacionFormularios::comprobarAlfaNumerico($_REQUEST['CodUsuario'], 15, 3, OBLIGATORIO); // comprueba que la entrada del codigo de usuario es correcta
+    $aErrores['CodUsuario'] = validacionFormularios::comprobarAlfaNumerico($_REQUEST['CodUsuario'], 8, 3, OBLIGATORIO); // comprueba que la entrada del codigo de usuario es correcta
 
     if($aErrores['CodUsuario']==null && UsuarioPDO::validarCodNoExiste($_REQUEST['CodUsuario'])==false){ // si no ha habido error en el campo CodUsuario y que no exista el nombre de usuario en la base de datos
         $aErrores['CodUsuario']="El nombre de usuario ya existe"; // guarda en el array de errores el men saje de error

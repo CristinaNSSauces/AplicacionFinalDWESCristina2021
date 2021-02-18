@@ -1,8 +1,12 @@
-<nav>
+<nav class="navInicio">
     <ul>
         <li id="logo">CNS</li>
         <li>Eliminar Cuenta</li>
     </ul>
+    
+    <form class="forNavInicio" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+        <button class="botonNav" name="cerrarSesion">Cerrar Sesión</button>
+    </form>
 </nav>
 <main class="mainEliminarCuenta">
     <div id="eliminarCuenta">
@@ -11,7 +15,7 @@
             <br>
             <div>
                 <h4>¿Está seguro de querer eliminar su cuenta?</h4>
-                <h5>Eliminará su cuenta y sus datos definitivamente</h5>
+                <h5><img src="webroot/media/images/atencion.png" width="15px">  Eliminará su cuenta y sus datos definitivamente</h5>
                 <br>
                 <label for="Password">Contraseña</label><br>
                 <input class="campos" type="password" id="Password" name="Password" value="">

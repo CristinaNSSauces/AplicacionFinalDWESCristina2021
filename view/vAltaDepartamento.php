@@ -1,27 +1,33 @@
-<nav>
+<nav class="navInicio">
     <ul>
         <li id="logo">CNS</li>
-        <li>Consultar/Editar Departamento</li>
+        <li>Añadir Departamento</li>
     </ul>
+    <form class="forNavInicio" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+        <button class="botonNav" name="cerrarSesion">Cerrar Sesión</button>
+    </form>
 </nav>
 <main class="mainConsultarEditarDepartamento">
     <div id="consultarEditarDepartamento">
         <form name="formulario" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" class="form">
-            <h3>Consultar/Editar Departamento</h3>
+            <h3>Añadir Departamento</h3>
             <br>
-            <h4>Campos bloqueados (*)</h4>
+            <h4><img src="webroot/media/images/atencion.png" width="15px">  El código del departamento se introducirá convertido a mayúsculas</h4>
             <br>
             <div>
-                <label for="CodDepartamento">Código de departamento (*)</label><br>
-                <input class="codigoDep" type="text" id="CodDepartamento" name="CodDepartamento" value="">
+                <label for="CodDepartamento">Código de departamento</label><br>
+                <input class="codigoDep" type="text" id="CodDepartamento" name="CodDepartamento" value="<?php echo isset($_REQUEST['CodDepartamento']) ? $_REQUEST['CodDepartamento'] : null; ?>">
+                <?php echo isset($aErrores['CodDepartamento']) ? '<p style="color: red;">'. $aErrores['CodDepartamento'].'</p>' : null; ?>
                 <br><br>
 
                 <label for="DescDepartamento" >Descripción de departamento</label><br>
-                <input class="campos" type="text" id="DescDepartamento" name="DescDepartamento" value="">
+                <input class="campos" type="text" id="DescDepartamento" name="DescDepartamento" value="<?php echo isset($_REQUEST['DescDepartamento']) ? $_REQUEST['DescDepartamento'] : null; ?>">
+                <?php echo isset($aErrores['DescDepartamento']) ? '<p style="color: red;">'. $aErrores['DescDepartamento'].'</p>' : null; ?>
                 <br><br>
 
                 <label for="VolumenNegocio">Volumen de negocio</label><br>
-                <input class="vNegocio" type="text" id="FechaHoraUltimaConexion" name="FechaHoraUltimaConexion" value="">
+                <input class="vNegocio" type="text" id="VolumenNegocio" name="VolumenNegocio" value="<?php echo isset($_REQUEST['VolumenNegocio']) ? $_REQUEST['VolumenNegocio'] : null; ?>">
+                <?php echo isset($aErrores['VolumenNegocio']) ? '<p style="color: red;">'. $aErrores['VolumenNegocio'].'</p>' : null; ?>
                 <br><br>
             </div>
             <div>

@@ -1,0 +1,50 @@
+<rss version="2.0">
+    <channel>
+        <title><![CDATA[ Cristina Nuñez Sebastian ]]></title>
+        <copyright> 2020-2021 Cristina Nuñez Sebastian Todos los Derechos Reservados</copyright>
+        <link>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/</link>
+        <description>Aplicacion final DWES Cristina Nuñez Sebastian</description>
+        <language>es</language>
+        <lastBuildDate>Thu, 18 Feb 2021 20:00:00 GMT</lastBuildDate>
+
+        <item>
+            <title>Mto Usuarios (Usuario Admin)</title>
+            <link> http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021</link>
+            <description>Nueva funcionalidad, mantenimiento de dusuarios para el usuario Admin</description>
+            <guid>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/mtousuarios</guid>
+            <pubDate>Thu, 18 Feb 2021 20:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Mto Departamentos Completo</title>
+            <link> http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021</link>
+            <description>Nueva funcionalidad, mantenimiento de departamentos completo</description>
+            <guid>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/mtodepartamentos</guid>
+            <pubDate>Thu, 11 Feb 2021 18:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Servicios de REST</title>
+            <link> http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021</link>
+            <description>Nueva funcionalidad, uso de servicios REST propios y ajenos</description>
+            <guid>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/REST</guid>
+            <pubDate>Thu, 04 Feb 2021 18:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Funcionalidad de Registro</title>
+            <link> http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021</link>
+            <description>Nueva funcionalidad de registro</description>
+            <guid>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/registro</guid>
+            <pubDate>Fri, 29 Jan 2021 18:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Funcionalidad de Login</title>
+            <link> http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021</link>
+            <description>Nueva funcionalidad de inicio de sesion</description>
+            <guid>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/login</guid>
+            <pubDate>Fri, 29 Jan 2021 18:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
