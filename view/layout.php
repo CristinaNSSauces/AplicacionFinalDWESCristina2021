@@ -6,8 +6,13 @@
             <title>AplicacionFinal</title>
 
             <link rel="stylesheet" href="webroot/css/estilo.css">
+<<<<<<< HEAD
             <script src="webroot/js/validarRegistro.js"></script>
             <link rel="stylesheet" href="webroot/css/estiloMtoUsuarios.css">
+=======
+            <script src="webroot/js/script.js"></script>
+            <script src="webroot/js/validarRegistro.js"></script>
+>>>>>>> b947ea14ab740f29ff0ea6163026cb43596f7140
         </head>
         <body>
 

@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 <nav class="navInicio">
+=======
+<nav>
+>>>>>>> b947ea14ab740f29ff0ea6163026cb43596f7140
     <ul>
         <li id="logo">CNS</li>
         <li>Exportar Departamentos</li>
     </ul>
+<<<<<<< HEAD
     <form class="forNavInicio" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
         <button class="botonNav" name="cerrarSesion">Cerrar Sesión</button>
     </form>
+=======
+>>>>>>> b947ea14ab740f29ff0ea6163026cb43596f7140
 </nav>
 <main class="mainImportarDepartamentos">
     <div id="importarDepartamentos">
