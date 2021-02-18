@@ -7,6 +7,7 @@
         <button class="botonNav" name="exportar">Exportar</button>
         <button class="botonNav" name="importar">Importar</button>
         <button class="botonNav" name="añadir">Añadir</button>
+        <button class="botonNav" name="cerrarSesion">Cerrar Sesión</button>
     </form>
 </nav>
 <main class="mainMtoDepartamentos">
@@ -15,6 +16,18 @@
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
             <label for="Departamento" >Departamento: </label>
             <input class="campos" type="text" id="Departamento" name="Departamento" value="<?php echo $busquedaDepartamento ?>">
+            <br><br>
+            <input type="radio" id="Todos" name="CriterioBusqueda" value="Todos" <?php echo !isset($criterioBusqueda) ? 'checked': ($criterioBusqueda=='Todos' ? 'checked' : null) ?> >
+            <label for="Todos">Todos</label>
+            <span>&nbsp;&nbsp;&nbsp;</span>
+
+            <input type="radio" id="Baja" name="CriterioBusqueda" value="Baja" <?php echo isset($criterioBusqueda) && $criterioBusqueda=='Baja' ? 'checked' : null ?> >
+            <label for="Baja">Departamentos dados de baja</label>
+            <span>&nbsp;&nbsp;&nbsp;</span>
+            
+            <input type="radio" id="Alta" name="CriterioBusqueda" value="Alta" <?php echo isset($criterioBusqueda) && $criterioBusqueda=='Alta' ? 'checked' : null ?> >
+            <label for="Alta">Depatamentos dados de alta</label>
+            <br><br>
             <input class="enviar" type="submit" value="Buscar" name="Buscar">
         </form>
     </div>
@@ -41,8 +54,12 @@
                             $fechaBaja = $oDepartamento->fechaBajaDepartamento;
                             if(isset($fechaBaja)){
                                 $colorTexto = "#F53D3D";
+                                $imagen = "webroot/media/images/rehabilitar.png";
+                                $accion = "rehabilitar";
                             }else{
                                 $colorTexto = "#2CD000";
+                                $imagen = "webroot/media/images/baja.png";
+                                $accion = "bajaLogica";
                             }
                     ?>
                             <tr style="color: <?php echo $colorTexto ?>;">
@@ -53,8 +70,7 @@
                                 <td><?php echo $oDepartamento->volumenDeNegocio; ?></td>
                                 <td><button type="submit" name="editar" value="<?php echo $codigoDepartamento; ?>"><img src="webroot/media/images/editar.png" alt="editar departamento" width="30px"></button></td>
                                 <td><button type="submit" name="borrar" value="<?php echo $codigoDepartamento; ?>"><img src="webroot/media/images/borrar.png" alt="borrar departamento" width="30px"></button></td>
-                                <td><button type="submit" name="bajaLogica" value="<?php echo $codigoDepartamento; ?>"><img src="webroot/media/images/baja.png" alt="baja logica departamento" width="30px"></button></td>
-                                <td><button type="submit" name="rehabilitar" value="<?php echo $codigoDepartamento; ?>"><img src="webroot/media/images/rehabilitar.png" alt="rehabilitar departamento" width="30px"></button></td>
+                                <td><button type="submit" name="<?php echo $accion; ?>" value="<?php echo $codigoDepartamento; ?>"><img src="<?php echo $imagen; ?>" alt="baja logica departamento" width="30px"></button></td>
                             </tr>
                     <?php
                         }

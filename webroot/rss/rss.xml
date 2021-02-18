@@ -5,7 +5,15 @@
         <link>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/</link>
         <description>Aplicacion final DWES Cristina Nuñez Sebastian</description>
         <language>es</language>
-        <lastBuildDate>Thu, 11 Feb 2021 18:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Feb 2021 20:00:00 GMT</lastBuildDate>
+
+        <item>
+            <title>Mto Usuarios (Usuario Admin)</title>
+            <link> http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021</link>
+            <description>Nueva funcionalidad, mantenimiento de dusuarios para el usuario Admin</description>
+            <guid>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/mtousuarios</guid>
+            <pubDate>Thu, 18 Feb 2021 20:00:00 GMT</pubDate>
+        </item>
 
         <item>
             <title>Mto Departamentos Completo</title>

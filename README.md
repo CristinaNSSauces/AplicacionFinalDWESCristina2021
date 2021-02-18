@@ -4,7 +4,7 @@
 ***Descripción: Aplicación final DWES 2021***
 
 #### *Fecha Inicio: 20/01/2021*
-#### *Última Actualización: 10/02/2021*
+#### *Última Actualización: 18/02/2021*
 
 ***Autor: Cristina Núñez Sebastián***
 
@@ -18,6 +18,8 @@
 - Creacion Api REST (GET & POST with key)
 - Cerrar sesión
 - Mantenimiento de departamentos (CRUD, Importar y Exportar (JSON, XML))
+- Mantenimiento de usuarios con AJAX (Usuario Admin)
+- Cookies
 
 **Front End**
 - HTML5
@@ -26,6 +28,20 @@
 
 **Back End**
 - PHP 7.4
+    - ***Módulos:***
+        - *curl*
+        - *date*
+        - *dom*
+        - *ftp*
+        - *json*
+        - *libxml*
+        - *mysqlnd*
+        - *PDO*
+        - *pdo_mysql*
+        - *SimpleXML*
+        - *xml*
+        - *xmlreader*
+        - *xmlwriter*
 - MySQL 8.0
 
 **1&1**

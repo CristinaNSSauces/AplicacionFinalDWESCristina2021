@@ -7,7 +7,7 @@
  * 
  * @author Cristina Nuñez
  * @since 1.0
- * @copyright 01-02-2021
+ * @copyright 2020-2021 Cristina Nuñez
  * @version 1.0
  */
 class Calculadora{

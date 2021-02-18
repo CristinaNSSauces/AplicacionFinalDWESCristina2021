@@ -1,4 +1,4 @@
-window.onload = () =>{
+window.onload = () =>{    
     var slideIndex = 1;
     showSlides(slideIndex);
     

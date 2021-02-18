@@ -4,9 +4,20 @@
         <li>Inicio</li>
     </ul>
     <form class="forNavInicio" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+    <?php 
+        if($oUsuarioActual->perfil != 'administrador'){
+    ?>
+    
         <button class="botonNav" name="rest">Rest</button>
         <button class="botonNav" name="mtoDepartamentos">Mto Departamentos</button>
         <button class="botonNav" name="editarPerfil">Editar Perfil</button>
+    <?php 
+        }else{
+    ?>
+        <button class="botonNav" name="mtoUsuarios">Mto Usuarios</button>
+    <?php 
+        }
+    ?>
         <button class="botonNav" name="cerrarSesion">Cerrar Sesión</button>
     </form>
 </nav>

@@ -1,4 +1,6 @@
 <?php
+$_SESSION['paginaAnterior'] = $controladores['mtoDepartamentos'];
+
 if(!isset($_SESSION['BusquedaDepartamento'])){//Si el usuario no ha realizado ninguna busqueda de ningun departamento
     $_SESSION['BusquedaDepartamento']="";//Por defecto establecemos la variable de sesión vacía para que aparezcan todos los departamentos almacenados
 }
@@ -71,16 +73,20 @@ if(isset($_REQUEST['rehabilitar'])){//Si el usuario pulsa el boton de rehabilita
 }
 
 define("OPCIONAL", 0);
-$errorBusqueda = null;
+$aErrores = ['Departamento' => null,
+             'CriterioBusqueda' => null];
 $entradaOK = true;
 
 if(isset($_REQUEST['Buscar'])){
-    $errorBusqueda = validacionFormularios::comprobarAlfaNumerico($_REQUEST['Departamento'], 255, 1, OPCIONAL);//Comprobamos que la descripción sea alfanumerico
-    
-    if($errorBusqueda != null){
-        $entradaOK = false;
-        $_REQUEST['Departamento'] = "";
-    }  
+    $aErrores['Departamento'] = validacionFormularios::comprobarAlfaNumerico($_REQUEST['Departamento'], 255, 1, OPCIONAL);//Comprobamos que la descripción sea alfanumerico
+    $aErrores['CriterioBusqueda'] = validacionFormularios::validarElementoEnLista($_REQUEST['CriterioBusqueda'],['Todos','Baja','Alta']);
+
+    foreach ($aErrores as $campo => $error) { // recorro el array de errores
+        if ($error != null) { // compruebo si hay algun mensaje de error en algun campo
+            $entradaOK = false; // le doy el valor false a $entradaOK
+            $_REQUEST[$campo] = ""; // si hay algun campo que tenga mensaje de error pongo $_REQUEST a null
+        }
+    }
 
 }else{
     $entradaOK = false;
@@ -88,13 +94,15 @@ if(isset($_REQUEST['Buscar'])){
 
 if($entradaOK){
     $_SESSION['BusquedaDepartamento'] = $_REQUEST['Departamento'];
+    $_SESSION['CriterioBusqueda'] = $_REQUEST['CriterioBusqueda'];
     $_SESSION['PaginaActual'] = 1;
 }
 
-$aResultadoBusqueda = DepartamentoPDO::buscarDepartamentosPorDescripcion($_SESSION['BusquedaDepartamento'], $_SESSION['PaginaActual'], 5);
+$aResultadoBusqueda = DepartamentoPDO::buscarDepartamentosPorDescripcion($_SESSION['BusquedaDepartamento'],$_SESSION['CriterioBusqueda'],  $_SESSION['PaginaActual'], 5);
 $aDepartamentos = $aResultadoBusqueda[0];
 $paginasTotales = $aResultadoBusqueda[1];
 $paginaActual = $_SESSION['PaginaActual'];
+$criterioBusqueda = $_SESSION['CriterioBusqueda'];
 
 $busquedaDepartamento = $_SESSION['BusquedaDepartamento'];
 

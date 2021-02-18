@@ -251,6 +251,21 @@ Search.appendIndex(
             "summary": "Metodo\u0020obtenerDatos\u0028\u0029",
             "url": "classes/RESTPropio.html#method_obtenerDatos"
         },                {
+            "fqsen": "\\RESTPropio\u003A\u003AobtenerUsuarios\u0028\u0029",
+            "name": "obtenerUsuarios",
+            "summary": "Metodo\u0020obtenerUsuarios\u0028\u0029",
+            "url": "classes/RESTPropio.html#method_obtenerUsuarios"
+        },                {
+            "fqsen": "\\RESTPropio\u003A\u003AobtenerUsuarioPorDescripcion\u0028\u0029",
+            "name": "obtenerUsuarioPorDescripcion",
+            "summary": "Metodo\u0020obtenerUsuarioPorDescripcion\u0028\u0029",
+            "url": "classes/RESTPropio.html#method_obtenerUsuarioPorDescripcion"
+        },                {
+            "fqsen": "\\RESTPropio\u003A\u003AeliminarUsuario\u0028\u0029",
+            "name": "eliminarUsuario",
+            "summary": "Metodo\u0020eliminarUsuario\u0028\u0029",
+            "url": "classes/RESTPropio.html#method_eliminarUsuario"
+        },                {
             "fqsen": "\\Usuario",
             "name": "Usuario",
             "summary": "Class\u0020Usuario",

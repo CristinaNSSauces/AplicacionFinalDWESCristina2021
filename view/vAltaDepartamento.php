@@ -1,8 +1,11 @@
-<nav>
+<nav class="navInicio">
     <ul>
         <li id="logo">CNS</li>
         <li>Añadir Departamento</li>
     </ul>
+    <form class="forNavInicio" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+        <button class="botonNav" name="cerrarSesion">Cerrar Sesión</button>
+    </form>
 </nav>
 <main class="mainConsultarEditarDepartamento">
     <div id="consultarEditarDepartamento">

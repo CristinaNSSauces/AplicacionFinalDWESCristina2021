@@ -20,11 +20,11 @@ if(isset($_REQUEST['EliminarCuenta'])){
     exit;
 }
 
-if(isset($_REQUEST['Tecnologias'])){ //  Si el usuario ha pulsado el boton Tecnoologias
-    $_SESSION['paginaEnCurso'] = $controladores['wip']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del registro
-    header('Location: index.php');
-    exit;
-}
+// if(isset($_REQUEST['Tecnologias'])){ //  Si el usuario ha pulsado el boton Tecnoologias
+//     $_SESSION['paginaEnCurso'] = $controladores['tecnologias']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del registro
+//     header('Location: index.php');
+//     exit;
+// }
 
 define("OBLIGATORIO", 1);
 define("OPCIONAL", 0);

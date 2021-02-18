@@ -11,7 +11,7 @@ require_once 'DepartamentoPDO.php';
  * 
  * @author Cristina Nuñez
  * @since 1.0
- * @copyright 01-02-2021
+ * @copyright 2020-2021 Cristina Nuñez
  * @version 1.0
  */
 class RESTPropio{
@@ -40,6 +40,89 @@ class RESTPropio{
             $aDatosRespuesta = ['error' => 'Codigo de departamento no valido'];
         }
         return $aDatosRespuesta;
+    }
+
+    /**
+     * Metodo obtenerUsuarios()
+     * 
+     * Metodo que nos permite obtener los datos de los usuarios almacenados en la base de datos
+     *
+     * @return string[] array con la informacion deseada o un mensaje de error si no se ha obtenido el resultado esperado
+     */
+    public static function obtenerUsuarios(){
+        $aDatosRespuesta = [];
+        $sentenciaSQL = "Select * from T01_Usuario";
+        $consulta = DBPDO::ejecutarConsulta($sentenciaSQL, []); // ejecutamos la consulta
+        if($consulta){
+            $resultado = $consulta->fetch(); // obtenemos los datos devueltos por la consulta
+            while($resultado){
+                // rellenamos el array con los datos que queremos devolver
+                if($resultado['T01_CodUsuario']!='admin'){
+                    $aDatosRespuesta[] = ['codUsuario' => $resultado['T01_CodUsuario'],
+                                        'descUsuario' => $resultado['T01_DescUsuario'],
+                                        'numConexiones' => $resultado['T01_NumConexiones'],
+                                        'fechaHoraUltimaConexion' => $resultado['T01_FechaHoraUltimaConexion']!=null ? date('d/m/Y',$resultado['T01_FechaHoraUltimaConexion']) : null];
+                }
+                $resultado = $consulta->fetch();
+            }
+        }else{
+            $aDatosRespuesta = ['error' => 'Se ha producido un error al ejecutar la consulta'];
+        }
+        return $aDatosRespuesta;
+    }
+
+    /**
+     * Metodo obtenerUsuarioPorDescripcion()
+     * 
+     * Metodo que nos permite obtener los datos de los usuarios almacenados en la base de datos
+     * segun su descripcion
+     *
+     * @param  string $descUsuario
+     * @return string[] array con la informacion deseada o un mensaje de error si no se ha obtenido el resultado esperado
+     */
+    public static function obtenerUsuarioPorDescripcion($descUsuario){
+        $aDatosRespuesta = [];
+        $sentenciaSQL = "Select * from T01_Usuario where T01_DescUsuario LIKE '%' ? '%'";
+        $consulta = DBPDO::ejecutarConsulta($sentenciaSQL, [$descUsuario]); // ejecutamos la consulta
+        
+        if($consulta){
+            $resultado = $consulta->fetch(); // obtenemos los datos devueltos por la consulta
+            while($resultado){
+                // rellenamos el array con los datos que queremos devolver
+                if($resultado['T01_CodUsuario']!='admin'){
+                    $aDatosRespuesta[] = ['codUsuario' => $resultado['T01_CodUsuario'],
+                                        'descUsuario' => $resultado['T01_DescUsuario'],
+                                        'numConexiones' => $resultado['T01_NumConexiones'],
+                                        'fechaHoraUltimaConexion' => $resultado['T01_FechaHoraUltimaConexion']!=null ? date('d/m/Y',$resultado['T01_FechaHoraUltimaConexion']) : null];
+                }
+                $resultado = $consulta->fetch();
+            }
+        }else{
+            $aDatosRespuesta = ['error' => 'Se ha producido un error al ejecutar la consulta'];
+        }
+        
+        return $aDatosRespuesta;
+    }
+
+    /**
+     * Metodo eliminarUsuario()
+     * 
+     * Metodo que elimina un usuario de la base de datos
+     *
+     * @param  string $codUsuario codigo del usuario que queremos borrar
+     * @return boolean true si se ha borrado el usuario y false en caso contrario
+     */
+    public static function eliminarUsuario($codUsuario){
+        $usuarioEliminado = false; // Inicializamos la variable usuarioEliminado a false
+
+        $sentenciaSQL = "Delete from T01_Usuario where T01_CodUsuario=?";
+        $resultadoConsulta = DBPDO::ejecutarConsulta($sentenciaSQL, [$codUsuario]); // Ejecutamos la consulta y almacenamos el resultado en la variable resultadoConsulta
+
+        if($resultadoConsulta){ // Si se ha realizado la consulta correctamente
+            $usuarioEliminado = true; // Cambiamos el valor de la variable usuarioEliminado a true 
+        }
+
+        return $usuarioEliminado; // devolvemos la variable usuarioEliminado
     }
 }
 ?>

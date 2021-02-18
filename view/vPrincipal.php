@@ -1,3 +1,21 @@
+<?php 
+    if(!isset($_COOKIE['aceptarPolitica'])){
+?>
+    <div class="ventana-cookie" id="ventana-cookie">
+        <div class="content">
+            <div class="content-text">Este sitio utiliza cookies para obtener la mejor experiencia en nuestra web.
+                <div class="content-buttons">
+                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                        <input type="submit"id="boton-cerrar" name="aceptar" value="aceptar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php 
+    }
+?>
+
 <nav class="navInicio">
     <ul class="logoInicio">
         <li id="logo">CNS</li>
@@ -17,14 +35,14 @@
         </div>
 
         <div class="mySlides fade">
-            <a href="doc/DiagramaDeClases.pdf" target="_blank">
-                <img src="webroot/media/images/DiagramaDeClases2021.svg" style="width:100%">
+            <a href="webroot/media/images/20210218_DiagramaDeClases.svg" target="_blank">
+                <img src="webroot/media/images/20210218_DiagramaDeClases.svg" style="width:100%">
                 <div class="text">Diagrama de clases</div>
             </a>
         </div>
 
         <div class="mySlides fade">
-            <a href="doc/210130DiagramaDeCasosDeUso.pdf" target="_blank">
+            <a href="doc/210216DiagramaDeCasosDeUso.pdf" target="_blank">
                 <img src="webroot/media/images/imagen3.JPG" style="width:100%">
                 <div class="text">Diagrama de casos de uso</div>
             </a>
@@ -63,5 +81,8 @@
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
     </div>
+    
+    <script src="webroot/js/script.js"></script>
 </main>

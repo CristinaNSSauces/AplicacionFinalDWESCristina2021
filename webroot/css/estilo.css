@@ -4,7 +4,47 @@
   font-family: 'Roboto', sans-serif;
   margin: 0%;
 }
+.ventana-cookie {
+  background: rgba(33, 41, 52, 0.698);
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
 
+.ventana-cookie .content {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 600px;
+  min-width: 320px !important;
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+
+.content-buttons {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#boton-cerrar{
+  background-color: #0066CC;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+}
 nav {
   background-color: #333333;
   height: 5vh;
@@ -35,6 +75,7 @@ nav ul #logo {
 
 main {
   height: 85vh;
+  min-height: calc(100vh - (5vh + 71px));
 }
 
 #enlaces {
@@ -1229,6 +1270,10 @@ footer table tr .derechos {
   overflow: auto;
 }
 
+.mainRest #inicio{
+  padding-top: 30px;
+}
+
 .mainRest form{
   max-height: 250px;
   overflow: auto;
@@ -1242,6 +1287,35 @@ footer table tr .derechos {
 
 .tecnologias:hover {
   text-decoration: underline;
+}
+
+/* VTECNOLOGIAS */
+.mainVtecnologias{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainVtecnologias table{
+  max-width: 900px;
+}
+
+.mainVtecnologias .formVolver{
+  width: 100%;
+}
+
+.mainVtecnologias .formVolver .enviar{
+  margin-left: 30px;
+}
+
+.imagenTecnologia{
+  text-align: center;
+  padding: 20px;
+}
+
+.imagenTecnologia img{
+  height: 300px;
 }
 
 /* SLIDER */
