@@ -124,5 +124,27 @@ class RESTPropio{
 
         return $usuarioEliminado; // devolvemos la variable usuarioEliminado
     }
+    
+    /**
+     * Metodo restablecerPassword()
+     * 
+     * Metodo que restablece la contraseña del usuario a paso
+     *
+     * @param  string $codUsuario codigo del usuario que queremos borrar
+     * @return boolean true si se ha restablecido la password y false en caso contrario
+     */
+    public static function restablecerPassword($codUsuario){
+        $passwordCambiado = false;
+        
+        $sentenciaSQL = "Update T01_Usuario set T01_Password=? where T01_CodUsuario=?";
+        $passwordNueva = hash("sha256", $codUsuario.'paso'); // encripta el password pasado como parametro
+        $resultadoConsulta = DBPDO::ejecutarConsulta($sentenciaSQL, [$passwordNueva,$codUsuario]); // Ejecutamos la consulta y almacenamos el resultado en la variable resultadoConsulta
+        
+        if($resultadoConsulta){ // Si se ha realizado la consulta correctamente
+            $passwordCambiado = true; // Cambiamos el valor de la variable usuarioEliminado a true 
+        }
+
+        return $passwordCambiado; // devolvemos la variable usuarioEliminado
+    }
 }
 ?>

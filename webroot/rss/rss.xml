@@ -5,7 +5,15 @@
         <link>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/</link>
         <description>Aplicacion final DWES Cristina Nuñez Sebastian</description>
         <language>es</language>
-        <lastBuildDate>Thu, 18 Feb 2021 20:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 24 Feb 2021 10:00:00 GMT</lastBuildDate>
+
+        <item>
+            <title>Restablecer Password (Mto Usuarios)</title>
+            <link> http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021</link>
+            <description>Nueva funcionalidad, restablecer password en MtoUsuarios</description>
+            <guid>http://daw215.ieslossauces.es/AplicacionFinalDWESCristina2021/mtousuariosrestablecerpassword</guid>
+            <pubDate>Wed, 24 Feb 2021 10:00:00 GMT</pubDate>
+        </item>
 
         <item>
             <title>Mto Usuarios (Usuario Admin)</title>
