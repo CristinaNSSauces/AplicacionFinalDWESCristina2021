@@ -8,12 +8,6 @@ if(isset($_REQUEST['Volver'])){
     exit;
 }
 
-// if(isset($_REQUEST['Tecnologias'])){ //  Si el usuario ha pulsado el boton Tecnoologias
-//     $_SESSION['paginaEnCursoSinRegistro'] = $controladores['tecnologias']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del registro
-//     header('Location: index.php');
-//     exit;
-// }
-
 if (isset($_REQUEST['Registrarse'])) { // si se ha pulsado el boton de registrarse
     $_SESSION['paginaEnCursoSinRegistro'] = $controladores['registro']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del registro
     header('Location: index.php');

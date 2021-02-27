@@ -7,10 +7,7 @@
         <button class="botonNav" name="exportar">Exportar</button>
         <button class="botonNav" name="importar">Importar</button>
         <button class="botonNav" name="añadir">Añadir</button>
-<<<<<<< HEAD
         <button class="botonNav" name="cerrarSesion">Cerrar Sesión</button>
-=======
->>>>>>> b947ea14ab740f29ff0ea6163026cb43596f7140
     </form>
 </nav>
 <main class="mainMtoDepartamentos">
@@ -19,7 +16,6 @@
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
             <label for="Departamento" >Departamento: </label>
             <input class="campos" type="text" id="Departamento" name="Departamento" value="<?php echo $busquedaDepartamento ?>">
-<<<<<<< HEAD
             <br><br>
             <input type="radio" id="Todos" name="CriterioBusqueda" value="Todos" <?php echo !isset($criterioBusqueda) ? 'checked': ($criterioBusqueda=='Todos' ? 'checked' : null) ?> >
             <label for="Todos">Todos</label>
@@ -32,8 +28,6 @@
             <input type="radio" id="Alta" name="CriterioBusqueda" value="Alta" <?php echo isset($criterioBusqueda) && $criterioBusqueda=='Alta' ? 'checked' : null ?> >
             <label for="Alta">Depatamentos dados de alta</label>
             <br><br>
-=======
->>>>>>> b947ea14ab740f29ff0ea6163026cb43596f7140
             <input class="enviar" type="submit" value="Buscar" name="Buscar">
         </form>
     </div>

@@ -13,13 +13,8 @@
             <h3>Consultar/Editar Departamento</h3>
             <br>
             <div>
-<<<<<<< HEAD
                 <label for="CodDepartamento">Código de departamento</label><br>
                 <input style="background-color: #f5f5f5;" class="codigoDep" type="text" id="CodDepartamento" name="CodDepartamento" readonly value="<?php echo $oDepartamento->codDepartamento; ?>">
-=======
-                <label for="CodDepartamento">Código de departamento (*)</label><br>
-                <input class="codigoDep" type="text" id="CodDepartamento" name="CodDepartamento" readonly value="<?php echo $oDepartamento->codDepartamento; ?>">
->>>>>>> b947ea14ab740f29ff0ea6163026cb43596f7140
                 <br><br>
 
                 <label for="DescDepartamento" >Descripción de departamento</label><br>
@@ -27,21 +22,12 @@
                 <?php echo isset($aErrores['DescDepartamento']) ? '<p style="color: red;">'. $aErrores['DescDepartamento'].'</p>' : null; ?>
                 <br><br>
 
-<<<<<<< HEAD
                 <label for="FechaCreacion">Fecha de creación</label><br>
                 <input style="background-color: #f5f5f5;" class="fechaDep" type="text" id="FechaCreacion" name="FechaCreacion" readonly value="<?php echo date('d/m/Y',$oDepartamento->fechaCreacionDepartamento); ?>">
                 <br><br>
 
                 <label for="FechaBaja">Fecha de baja</label><br>
                 <input style="background-color: #f5f5f5;" class="fechaDep" type="text" id="FechaBaja" name="FechaBaja" readonly value="<?php echo isset($oDepartamento->fechaBajaDepartamento) ? date('d/m/Y',$oDepartamento->fechaBajaDepartamento) : "null"; ?>">
-=======
-                <label for="FechaCreacion">Fecha de creación (*)</label><br>
-                <input class="fechaDep" type="text" id="FechaCreacion" name="FechaCreacion" readonly value="<?php echo date('d/m/Y',$oDepartamento->fechaCreacionDepartamento); ?>">
-                <br><br>
-
-                <label for="FechaBaja">Fecha de baja (*)</label><br>
-                <input class="fechaDep" type="text" id="FechaBaja" name="FechaBaja" readonly value="<?php echo isset($oDepartamento->fechaBajaDepartamento) ? date('d/m/Y',$oDepartamento->fechaBajaDepartamento) : "null"; ?>">
->>>>>>> b947ea14ab740f29ff0ea6163026cb43596f7140
                 <br><br>
 
                 <label for="VolumenNegocio">Volumen de negocio</label><br>

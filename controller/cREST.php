@@ -2,11 +2,6 @@
 $_SESSION['paginaAnterior'] = $controladores ['rest'];
 
 error_reporting(0);
-// if(isset($_REQUEST['Tecnologias'])){ //  Si el usuario ha pulsado el boton Tecnoologias
-//     $_SESSION['paginaEnCurso'] = $controladores['tecnologias']; // guardamos en la variable de sesion 'pagina' la ruta del controlador del registro
-//     header('Location: index.php');
-//     exit;
-// }
 
 if(isset($_REQUEST['volver'])){ // Si el usuario ha pulsado el boton de volver
     $_SESSION['paginaEnCurso'] = $controladores['inicio']; // guardamos en la variable de sesion paginaEnCurso la ruta del controlador del inicio

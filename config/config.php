@@ -20,11 +20,8 @@ $controladores = [
     "borrarCuenta" => "controller/cBorrarCuenta.php",
     "cambiarPassword" => "controller/cCambiarPassword.php",
     "mtoDepartamentos" => "controller/cMtoDepartamentos.php",
-<<<<<<< HEAD
     "mtoUsuarios" => "controller/cMtoUsuarios.php",
     "tecnologias" => "controller/cTecnologias.php",
-=======
->>>>>>> b947ea14ab740f29ff0ea6163026cb43596f7140
     "consultarModificar" => "controller/cConsultarModificarDepartamento.php",
     "borrar" => "controller/cEliminarDepartamento.php",
     "bajaLogica" => "controller/cBajaLogicaDepartamento.php",
@@ -46,11 +43,8 @@ $vistas = [
     "borrarCuenta" => "view/vBorrarCuenta.php",
     "cambiarPassword" => "view/vCambiarPassword.php",
     "mtoDepartamentos" => "view/vMtoDepartamentos.php",
-<<<<<<< HEAD
     "mtoUsuarios" => "view/vMtoUsuarios.php",
     "tecnologias" => "view/vTecnologias.php",
-=======
->>>>>>> b947ea14ab740f29ff0ea6163026cb43596f7140
     "consultarModificar" => "view/vConsultarModificarDepartamento.php",
     "borrar" => "view/vEliminarDepartamento.php",
     "bajaLogica" => "view/vBajaLogicaDepartamento.php",
