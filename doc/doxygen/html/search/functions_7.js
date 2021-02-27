@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['modificardepartamento_90',['modificarDepartamento',['../class_departamento_p_d_o.html#a2d1dbd88224af725452bbbdd60e2ece1',1,'DepartamentoPDO']]],
-  ['modificarusuario_91',['modificarUsuario',['../class_usuario_p_d_o.html#a03e7bf37b974f215de70b591a3de1d0a',1,'UsuarioPDO']]],
-  ['multiplicar_92',['Multiplicar',['../class_calculadora.html#afd9348d30eaabf64886f87db6f0f2e0e',1,'Calculadora']]]
+  ['modificardepartamento_92',['modificarDepartamento',['../class_departamento_p_d_o.html#af0119d0d4d206e311bf039dee63b22c2',1,'DepartamentoPDO']]],
+  ['modificarusuario_93',['modificarUsuario',['../class_usuario_p_d_o.html#a61b6180a245c2c4f17d5780989ff1c6e',1,'UsuarioPDO']]],
+  ['multiplicar_94',['Multiplicar',['../class_calculadora.html#a6a03e9ea12ca73c65b5ae40d1029c61f',1,'Calculadora']]]
 ];

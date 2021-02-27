@@ -35,8 +35,8 @@
         </div>
 
         <div class="mySlides fade">
-            <a href="webroot/media/images/20210218_DiagramaDeClases.svg" target="_blank">
-                <img src="webroot/media/images/20210218_DiagramaDeClases.svg" style="width:100%">
+            <a href="webroot/media/images/20210227_DiagramaDeClases.svg" target="_blank">
+                <img src="webroot/media/images/20210227_DiagramaDeClases.svg" style="width:100%">
                 <div class="text">Diagrama de clases</div>
             </a>
         </div>

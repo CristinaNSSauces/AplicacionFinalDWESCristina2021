@@ -266,6 +266,11 @@ Search.appendIndex(
             "summary": "Metodo\u0020eliminarUsuario\u0028\u0029",
             "url": "classes/RESTPropio.html#method_eliminarUsuario"
         },                {
+            "fqsen": "\\RESTPropio\u003A\u003ArestablecerPassword\u0028\u0029",
+            "name": "restablecerPassword",
+            "summary": "Metodo\u0020restablecerPassword\u0028\u0029",
+            "url": "classes/RESTPropio.html#method_restablecerPassword"
+        },                {
             "fqsen": "\\Usuario",
             "name": "Usuario",
             "summary": "Class\u0020Usuario",
