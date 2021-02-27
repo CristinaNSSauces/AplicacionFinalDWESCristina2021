@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dividir_85',['Dividir',['../class_calculadora.html#aa0254a748c7a404adb24641c17526918',1,'Calculadora']]]
+  ['dividir_87',['Dividir',['../class_calculadora.html#a31eac63f947bdac0b02c2c1dcc38e299',1,'Calculadora']]]
 ];

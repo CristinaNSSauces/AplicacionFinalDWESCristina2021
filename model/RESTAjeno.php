@@ -82,7 +82,7 @@ class RESTAjeno{
      * @param  string $codDepartamento codigo de departamento
      * @return string[] array con los datos obtenidos en la conexion con el servidor
      */
-    public static function obtenerVolumenDeNegocio($codDepartamento){ // TODO Cambiar en paso a explotacion
+    public static function obtenerVolumenDeNegocio($codDepartamento){
         $resultado = file_get_contents(PATH_JAVIER.'AplicacionFinalDWESJavier2021/api/consultarDatosDepartamento.php?codDepartamento='.$codDepartamento); // obtenemos el resultado del servidor del api rest
 
         return json_decode($resultado, true);// devolvemos un array con los datos correspondientes
@@ -98,7 +98,7 @@ class RESTAjeno{
      * @param  string $key clave para acceder al servicio REST
      * @return string[] array con los datos obtenidos en la conexion con el servidor
      */
-    public static function obtenerDatosDepartamentoPOST($codDepartamento, $key){ // TODO Cambiar en paso a explotacion
+    public static function obtenerDatosDepartamentoPOST($codDepartamento, $key){
 
         $aParametros = ['codDepartamento' => $codDepartamento,
                         'key' => hash('sha256', $key)]; // array con los parametros introducidos por el usuario

@@ -16,10 +16,18 @@ function validarCodUsuario(){
     if(validarCampoVacio('CodUsuario')){
         errorUsuario.innerHTML = "Campo vacio";
         codUsuarioCorrecto = false;
-    }else if(codUsuario.value.length<3){
+    }else{
+        for(var i=0; i<codUsuario.value.length; i++){
+            if(!isNaN(codUsuario.value[i])){
+                codUsuarioCorrecto = false;
+                errorUsuario.innerHTML = "El campo debe estar formado por caracteres";
+            }
+        }
+    }
+    if(codUsuarioCorrecto && codUsuario.value.length<3){
         errorUsuario.innerHTML = "El tamaño mínimo es de 3 caracteres";
         codUsuarioCorrecto = false;
-    }else if(codUsuario.value.length>8){
+    }else if(codUsuarioCorrecto && codUsuario.value.length>8){
         errorUsuario.innerHTML = "El tamaño máximo es de 8 caracteres";
         codUsuarioCorrecto = false;
     }

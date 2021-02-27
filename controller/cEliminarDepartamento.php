@@ -10,7 +10,7 @@ if(isset($_REQUEST['Cancelar'])){
 }
 
 if(isset($_REQUEST['Aceptar'])){
-    DepartamentoPDO::bajaFisicaDepartamento($codDepartamento);
+    DepartamentoPDO::bajaFisicaDepartamento($_SESSION['CodDepartamento']);
     $_SESSION['paginaEnCurso'] = $controladores['mtoDepartamentos'];
     header('Location: index.php');//Redirigimos al usuario a la ventana de editar departamento
     exit;

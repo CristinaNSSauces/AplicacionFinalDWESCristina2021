@@ -25,6 +25,17 @@
     color: white;
     font-size: 17px;
     border: none;
+    margin-right: 5px;
+}
+
+.restablecerPassword{
+    background-color: #0cb876;
+    width: 195px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    border: none;
 }
 
 .mainMtoUsuarios {

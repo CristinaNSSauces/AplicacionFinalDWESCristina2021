@@ -62,7 +62,7 @@
                 <br><br>
             </div>
             <div>
-                <input class="eliminar" type="submit" value="Eliminar" name="Aceptar">
+                <input class="eliminar" type="submit" value="Aceptar" name="Aceptar">
                 <br>
                 <input class="enviar" type="submit" value="Cancelar" name="Cancelar">
             </div>

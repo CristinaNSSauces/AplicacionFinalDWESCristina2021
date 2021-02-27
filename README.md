@@ -4,7 +4,7 @@
 ***Descripción: Aplicación final DWES 2021***
 
 #### *Fecha Inicio: 20/01/2021*
-#### *Última Actualización: 18/02/2021*
+#### *Última Actualización: 27/02/2021*
 
 ***Autor: Cristina Núñez Sebastián***
 
@@ -18,7 +18,7 @@
 - Creacion Api REST (GET & POST with key)
 - Cerrar sesión
 - Mantenimiento de departamentos (CRUD, Importar y Exportar (JSON, XML))
-- Mantenimiento de usuarios con AJAX (Usuario Admin)
+- Mantenimiento de usuarios con AJAX (Usuario Admin) (RestablecerPassword y Eliminar Usuario)
 - Cookies
 
 **Front End**

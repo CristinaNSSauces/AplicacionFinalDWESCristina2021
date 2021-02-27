@@ -20,7 +20,7 @@ function obtenerDatosUsuarioPorDesc(descripcionUsuario){
                     } else {
                         tabla += "<td> null </td>";
                     }
-                    tabla += "<td><button class=\"eliminar\" onclick=\"eliminarUsuario('" + resultado[i].codUsuario + "')\">eliminar</button></td>";
+                    tabla += "<td><button class=\"eliminar\" onclick=\"eliminarUsuario('" + resultado[i].codUsuario + "')\">eliminar</button><button class=\"restablecerPassword\" onclick=\"restablecerPassword('" + resultado[i].codUsuario + "')\">Restablecer Password</button></td>";
                     tabla += "</tr>";
                 }
 
@@ -97,6 +97,54 @@ function eliminarUsuario(codigoUsuario) {
             Swal.fire(
                 'Usuario Eliminado!',
                 'El usuario seleccionado ha sido eliminado de la base de datos',
+                'success'
+            )
+        }
+    })
+}
+
+function restablecerPassword(codigoUsuario) {
+    Swal.fire({
+        title: '¿Estás seguro de de restablecer la contraseña del usuario?',
+        text: "Restableceras la contraseña del usuario seleccionado",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'RestablecerPassword',
+        cancelButtonText: 'Cancelar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $.ajax({
+                type: 'post',
+                url: '/AplicacionFinalDWESCristina2021/api/servicioRestablecerPassword.php',
+                data: {
+                    key: "dcb29f5a90e05bf17e238bc4fe0d51b73827a7d2b28e1b3ddaf3fe0aa5e8bca8",
+                    codUsuario: codigoUsuario
+                },
+                success: function (respuesta) {
+                    if (respuesta['error'] == null) {
+                        obtenerDatosUsuarioPorDesc("");
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: respuesta['error']
+                        })
+                    }
+
+                },
+                error: function (respuesta) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'No se ha podido obtener la información'
+                    })
+                }
+            });
+            Swal.fire(
+                'Password restablecida!',
+                'La contraseña ha sido restablecida con exito',
                 'success'
             )
         }
