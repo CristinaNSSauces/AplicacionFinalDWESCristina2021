@@ -1,5 +1,6 @@
 <?php
 $_SESSION['paginaAnterior'] = $controladores['mtoDepartamentos'];
+$_SESSION['CriterioBusqueda'] = "Todos";
 
 if(!isset($_SESSION['BusquedaDepartamento'])){//Si el usuario no ha realizado ninguna busqueda de ningun departamento
     $_SESSION['BusquedaDepartamento']="";//Por defecto establecemos la variable de sesión vacía para que aparezcan todos los departamentos almacenados

@@ -12,8 +12,6 @@
         <form name="formulario" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" class="form">
             <h3>Añadir Departamento</h3>
             <br>
-            <h4><img src="webroot/media/images/atencion.png" width="15px">  El código del departamento se introducirá convertido a mayúsculas</h4>
-            <br>
             <div>
                 <label for="CodDepartamento">Código de departamento</label><br>
                 <input class="codigoDep" type="text" id="CodDepartamento" name="CodDepartamento" value="<?php echo isset($_REQUEST['CodDepartamento']) ? $_REQUEST['CodDepartamento'] : null; ?>">
